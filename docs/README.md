@@ -2,6 +2,14 @@
 
 <h1 align="center"> BitFox  </h1>
 
+<p align="center">
+    <a href="https://www.npmjs.com/package/bitfox">
+       <img alt="version" src="https://img.shields.io/npm/v/bitfox.svg?maxAge=2592000"/>
+       <img alt="download" src="https://img.shields.io/npm/dt/bitfox.svg?maxAge=2592000"/>
+    </a>
+</p>
+
+
 <p align="center"> Multi Exchange Crypto Currency Trading Bot <br />&<br /> Data Analysis Library and Strategy Back testing Engine </p>
 <p align="center"></p>
 <hr/>
