@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>MockService.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="MockService.html">MockService</a><ul class='methods'><li data-type='method'><a href="MockService.html#allOrders">allOrders</a></li><li data-type='method'><a href="MockService.html#currencies">currencies</a></li><li data-type='method'><a href="MockService.html#exchanges">exchanges</a></li><li data-type='method'><a href="MockService.html#fetchOHLCV">fetchOHLCV</a></li><li data-type='method'><a href="MockService.html#fetchOHLCVSince">fetchOHLCVSince</a></li><li data-type='method'><a href="MockService.html#fetchOrderBook">fetchOrderBook</a></li><li data-type='method'><a href="MockService.html#fetchTicker">fetchTicker</a></li><li data-type='method'><a href="MockService.html#getBalance">getBalance</a></li><li data-type='method'><a href="MockService.html#getFilledOrder">getFilledOrder</a></li><li data-type='method'><a href="MockService.html#getTradeTemplate">getTradeTemplate</a></li><li data-type='method'><a href="MockService.html#has">has</a></li><li data-type='method'><a href="MockService.html#limitBuyOrder">limitBuyOrder</a></li><li data-type='method'><a href="MockService.html#limitSellOrder">limitSellOrder</a></li><li data-type='method'><a href="MockService.html#marketBuyOrder">marketBuyOrder</a></li><li data-type='method'><a href="MockService.html#marketSellOrder">marketSellOrder</a></li><li data-type='method'><a href="MockService.html#markets">markets</a></li><li data-type='method'><a href="MockService.html#rateLimit">rateLimit</a></li><li data-type='method'><a href="MockService.html#requiredCredentials">requiredCredentials</a></li><li data-type='method'><a href="MockService.html#setUpClient">setUpClient</a></li><li data-type='method'><a href="MockService.html#symbols">symbols</a></li><li data-type='method'><a href="MockService.html#timeFrames">timeFrames</a></li><li data-type='method'><a href="MockService.html#timeout">timeout</a></li><li data-type='method'><a href="MockService.html#waitForRateLimit">waitForRateLimit</a></li><li data-type='method'><a href="MockService.html#.getService">getService</a></li></ul></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">MockService.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>let ExchangeService = require("./ExchangeService").Service;
+let {Mock} = require("../lib/model/Mock");
+
+const ccxt = require("ccxt");
+
+/**
+ * Class Mock Service
+ *
+ * This clas provides the same service as the Exchange Service but instead of placing real trades,
+ * this class mocks or simulates executing exchange actions that would normally require a API Key!
+ */
+class MockService {
+
+    /**
+     *
+     * @param args {any} The Configuration options that supplied through the BitFoxEngine
+     * @returns {MockService}
+     */
+    static getService(args){
+        return new MockService(args);
+    }
+
+    /**
+     *
+     * @param args {any} The Configuration options that supplied through the BitFoxEngine
+     * @param exchangeService
+     */
+
+    constructor(args, exchangeService=null) {
+        this.exchange = (exchangeService === null) ? ExchangeService.getService(args) : exchangeService;
+        this.mock = Mock.mocker();
+    }
+
+    /**
+     *
+     * @param exchange {String} The exchange name
+     * @param args {any} The Configuration options that supplied through the BitFoxEngine
+     * @returns {Promise&lt;MockService>}
+     */
+
+    async setUpClient(exchange,args){
+        await this.exchange.setUpClient(exchange,args);
+        return this;
+    }
+
+    /**
+     *
+     * @returns {Array&lt;String>} The Available Exchanges*/
+    exchanges(){
+        return ccxt.exchanges
+    }
+
+    /**
+     *
+     * @returns {any} A object containing the required credentials for the given target exchange please see ccxt documentation for structure
+     */
+    requiredCredentials(){
+        return this.exchange.requiredCredentials;
+    }
+
+    /**
+     *
+     * @returns {any} A object containing the available timeframes on the given target exchange please see ccxt documentation for structure
+     * */
+    timeFrames(){
+        return this.exchange.timeFrames;
+    }
+
+    /**
+     *
+     * @returns {Number} HTTP request Timout
+     */
+
+    timeout(){ return super.timeout() }
+
+    /**
+     *
+     * @returns {any} API Request Limit on the target exchange
+     */
+    rateLimit(){ return super.rateLimit() }
+
+    /**
+     *
+     * @returns {any} Returns the market structure of the given exchange
+     */
+    markets(){return super.markets() }
+
+    /**
+     *
+     * @returns {Array&lt;string>} A list of available Symbols on the target exchange
+     */
+    symbols(){return super.symbols() }
+
+    /**
+     *
+     * @returns {any} A object with available currencies on the exchange please ccxt for object structure
+     */
+    currencies(){return super.currencies() }
+
+    /**
+     *
+     * @returns {Promise&lt;unknown>} Helper method to enforce rate limit wait periods during excessive api usage
+     */
+    waitForRateLimit(){
+       return super.waitForRateLimit()
+    }
+
+    /**
+     *
+     * @param key {String} The method handle on ccxt client to check if a exchange supports a method call like fetchOHLCV
+     * @returns {Boolean}
+     */
+    has(key){
+        return this.exchange.has(key);
+    }
+
+    /**
+     *
+     * @param quote {String} The Quote currency i.e USDT
+     * @param base {String} The Base Currency i.e. BTC
+     * @param quoteAmount The Quote amount
+     * @param baseAmount the base amount
+     * @returns {{BTC: {total: *, used: number, free: *}, datetime: string, USD: {total: *, used: number, free: *}, free: {}, timestamp: number}}
+     */
+    getBalance(quote, base, quoteAmount, baseAmount){
+        return this.mock.getBalance(quote, base, quoteAmount, baseAmount)
+    }
+
+    /**
+     *
+     * @param id {String} The Order ID
+     * @param symbol {String} The Symbol i.e. ADAUSDT, BTCUSDT etc.
+     * @param price {String} Not used not sure why this is here
+     * @returns {Promise&lt;*>} Returns an order object see ccxt documentation for object structure
+     */
+    getFilledOrder(id,symbol,price) {
+        return this.mock.getClosedOrder(id,symbol,price)
+    }
+
+    /**
+     *
+     * @param symbol {String} The Symbol i.e. ADAUSDT, BTCUSDT etc.
+     * @returns {Promise&lt;*>} Returns All order for given symbol
+     */
+    allOrders(symbol){
+        return this.mock.getAllOrders(symbol);
+    }
+
+    /**
+     *
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc.
+     * @param amount {number} the amount to purchase
+     * @param orderPrice {number} the order price to set the limit order
+     * @param params {any} Optional not used yet
+     * @returns {{symbol: string, average, datetime: string, side: string, amount, price, id: string, lastTradeTimestamp: number, type: string, timeInForce: string, timestamp: number, status: string}}
+     */
+    limitBuyOrder(symbol,amount,orderPrice,params){
+        return this.mock.buyOrder(symbol,'limit', orderPrice, amount);
+    }
+
+    /**
+     *
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc.
+     * @param amount {number} the amount to purchase
+     * @param orderPrice {number} the order price to set the limit order
+     * @param params {any} Optional not used yet
+     * @returns {{symbol: string, average, datetime: string, side: string, amount, price, id: string, lastTradeTimestamp: number, type: string, timeInForce: string, timestamp: number, status: string}}
+     */
+    limitSellOrder(symbol,amount,orderPrice,params){
+        return this.mock.sellOrder(symbol,'limit', orderPrice, amount);
+    }
+
+    /**
+     *
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc.
+     * @param amount {number} the amount to purchase
+     * @param orderPrice {number} the order price to set the limit order
+     * @param params {any} Optional not used yet
+     * @returns {{symbol: string, average, datetime: string, side: string, amount, price, id: string, lastTradeTimestamp: number, type: string, timeInForce: string, timestamp: number, status: string}}
+     */
+    marketBuyOrder(symbol,amount,orderPrice,params){
+        return  this.mock.buyOrder(symbol,'market', orderPrice, amount);
+
+    }
+
+    /**
+     *
+     * @param currentCandles {Array&lt;number>} the current candles
+     * @param order {any} the Order that you want to add to the trade template
+     * @param profitTarget {number} the profit target
+     * @param funds {number} the funds available in this mocked scenario
+     * @param amount {number} the amount available in this mocked scenario
+     * @param side {String} the side of the trade i.e. long|shot
+     * @returns {{entryTimestamp: Date, tradeDirection, amount, entryOrder, profitTarget, stopTriggered: boolean, funds, totalBars: number, exitOrder: null, exitTimeStamp: null}}
+     */
+    getTradeTemplate(currentCandles, order, profitTarget, funds, amount, side){
+        return this.mock.getTradeTemplate(currentCandles, order, profitTarget, funds, amount, side)
+    }
+
+    /**
+     *
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc.
+     * @param amount {number} the amount to purchase
+     * @param orderPrice {number} the order price to set the limit order
+     * @param params {any} Optional not used yet
+     * @returns {{symbol: string, average, datetime: string, side: string, amount, price, id: string, lastTradeTimestamp: number, type: string, timeInForce: string, timestamp: number, status: string}}
+     */
+    marketSellOrder(symbol,amount,orderPrice,params){
+        return this.mock.sellOrder(symbol,'market', orderPrice, amount);
+    }
+
+    /**
+     *
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc
+     * @param limit {String} The Limit or amount of candles to fetch
+     * @param params {any} Optional not used yet
+     * @returns {Promise&lt;*>} An Array of Arrays with open,close,highs,low and volume data
+     */
+    async fetchOrderBook(symbol, limit,params){
+        return await this.exchange.fetchOrderBook(symbol,limit,params);
+    }
+
+    /**
+     *
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc
+     * @param timeframe {String} The timeframe or candle period to fetch
+     * @returns {Promise&lt;*>} An Array of Arrays with open,close,highs,low and volume data
+     */
+    async fetchOHLCV(symbol,timeframe){
+        //this.client.parse8601("");
+        return await this.exchange.fetchOHLCV(symbol, timeframe, null, this.candleLimit);
+    }
+
+    /**
+     *
+     * @param since {Date} a Date indicating the starting period for the Historical Data
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc
+     * @param timeframe {String} The timeframe or candle period to fetch
+     * @returns {Promise&lt;*>} An Array of Arrays with open,close,highs,low and volume data
+     */
+    async fetchOHLCVSince(symbol,timeframe, since){
+        return await this.exchange.fetchOHLCV(symbol, timeframe, since, this.candleLimit);
+    }
+
+    /**
+     *
+     * @param symbol {String}  The Symbol i.e. ADAUSDT, BTCUSDT etc
+     * @returns {Promise&lt;*>} A Ticker object please ccxt documentation for object structure we are lazy here!
+     */
+    async fetchTicker( symbol ){
+        return await this.exchange.fetchTicker( symbol)
+    }
+}
+
+/**
+ *
+ * @type {{Service: MockService}}
+ */
+module.exports = {Service:MockService}
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Apr 15 2023 11:05:57 GMT+0100 (British Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

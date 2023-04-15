@@ -7,3 +7,4 @@
 * [Alerting & Notifications](pages/alertsAndNotifications.md)
 * [Data Analysis](pages/dataAnalysisPlugin.md)
 * [Misc](pages/misc.md)
+* [Documentation](pages/Documentation.md)

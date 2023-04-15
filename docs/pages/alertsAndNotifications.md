@@ -46,4 +46,3 @@ Follow the Instructions and once you have created a bot all you need to do, is s
 and open your newly created Bot on Telegram and enter ``/start`` In the chat box.
 
 This will Create an internal Chat ID on the Bot side and the bot will start sending Notifications to your Chat!
-

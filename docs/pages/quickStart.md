@@ -267,6 +267,8 @@ let engine = builder()
     /*                      Exchange Specific Parameters                                */
     /*----------------------------------------------------------------------------------*/
 
+    //Exchange Parameter you need to add this inorder to Identify the Exchange you want to use
+    .exchange(String) 
     // Exchange Specific Parameter sets you desired Trading Pair i.e. ADAUSDT|BTCUSDT|ETHUSDT etc.
     .symbol(String)
     
@@ -317,7 +319,7 @@ let engine = builder()
     /*                      Strategy  Parameters                                        */
     /*----------------------------------------------------------------------------------*/
     
-    // Strategy Specific Parameter setting the preffered trade direction long|short|biDrectional  
+    // Strategy Specific Parameter setting the preferred trade direction long|short|biDrectional  
     .sidePreference(String)
 
     // Strategy Specific Parameter custom values for Strategies like moving average period's and other data that 
@@ -328,11 +330,11 @@ let engine = builder()
     /*                      Alert & Notificaion  Parameters                             */
     /*----------------------------------------------------------------------------------*/
 
-    // Alerting & Notification Speficic Parameter setting the Alert Type to be used: Email|Slack|Telegram
+    // Alerting & Notification Specific Parameter setting the Alert Type to be used: Email|Slack|Telegram
     // might be important or needed in the Strategy 
     .type(String)
 
-    // Alerting & Notification Speficic Parameter setting the API token needed to call dedicated API's 
+    // Alerting & Notification Specific Parameter setting the API token needed to call dedicated API's 
     // responsible to send out the Notification
     .notificationToken(String)
 
@@ -341,13 +343,13 @@ let engine = builder()
     // please checkout our Documentation on Alerting & Notification.
     .telegramChatId(String)
 
-    // Alerting & Notification Email Speficic Parameter to identify who send the email!
+    // Alerting & Notification Email Specific Parameter to identify who send the email!
     .emailFrom(String)
 
-    // Alerting & Notification Email Speficic Parameter to identify where the email should be send to!
+    // Alerting & Notification Email Specific Parameter to identify where the email should be send to!
     .emailTo(String)
     
-    // Alerting & Notification Speficic Parameter setting custom data for Alerts
+    // Alerting & Notification Specific Parameter setting custom data for Alerts
     .alertExtras(Object)
 
     // Final build call applies the data, creates a BitFoxEngine instance and returns it back to callee.

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>FloorPivots - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AdlIndicator.html">AdlIndicator</a><ul class='methods'><li data-type='method'><a href="AdlIndicator.html#.getData">getData</a></li></ul></li><li><a href="AdxIndicator.html">AdxIndicator</a><ul class='methods'><li data-type='method'><a href="AdxIndicator.html#.getData">getData</a></li></ul></li><li><a href="AtrIndicator.html">AtrIndicator</a><ul class='methods'><li data-type='method'><a href="AtrIndicator.html#.getData">getData</a></li></ul></li><li><a href="AwesomeOscillatorIndicator.html">AwesomeOscillatorIndicator</a><ul class='methods'><li data-type='method'><a href="AwesomeOscillatorIndicator.html#.getData">getData</a></li></ul></li><li><a href="BollingerIndicator.html">BollingerIndicator</a><ul class='methods'><li data-type='method'><a href="BollingerIndicator.html#.getData">getData</a></li></ul></li><li><a href="CciIndicator.html">CciIndicator</a><ul class='methods'><li data-type='method'><a href="CciIndicator.html#.getData">getData</a></li></ul></li><li><a href="EMAIndicator.html">EMAIndicator</a><ul class='methods'><li data-type='method'><a href="EMAIndicator.html#.getData">getData</a></li></ul></li><li><a href="Ema10And20.html">Ema10And20</a><ul class='methods'><li data-type='method'><a href="Ema10And20.html#.getData">getData</a></li></ul></li><li><a href="Ema3Indicator.html">Ema3Indicator</a><ul class='methods'><li data-type='method'><a href="Ema3Indicator.html#.getData">getData</a></li></ul></li><li><a href="Ema4Indicator.html">Ema4Indicator</a><ul class='methods'><li data-type='method'><a href="Ema4Indicator.html#.getData">getData</a></li></ul></li><li><a href="FloorPivots.html">FloorPivots</a><ul class='methods'><li data-type='method'><a href="FloorPivots.html#.getData">getData</a></li></ul></li><li><a href="ForceIndexIndiactor.html">ForceIndexIndiactor</a><ul class='methods'><li data-type='method'><a href="ForceIndexIndiactor.html#.getData">getData</a></li></ul></li><li><a href="IchimokuCloudIndicator.html">IchimokuCloudIndicator</a><ul class='methods'><li data-type='method'><a href="IchimokuCloudIndicator.html#.getData">getData</a></li></ul></li><li><a href="IndicatorList.html">IndicatorList</a><ul class='methods'><li data-type='method'><a href="IndicatorList.html#.getData">getData</a></li></ul></li><li><a href="IndicatorUtils.html">IndicatorUtils</a></li><li><a href="IndicatorUtils.CrossDown.html">CrossDown</a></li><li><a href="IndicatorUtils.CrossOver.html">CrossOver</a></li><li><a href="IndicatorUtils.CrossUp.html">CrossUp</a></li><li><a href="IndicatorUtils.Highest.html">Highest</a></li><li><a href="IndicatorUtils.Lowest.html">Lowest</a></li><li><a href="KsiIndicator.html">KsiIndicator</a><ul class='methods'><li data-type='method'><a href="KsiIndicator.html#.getData">getData</a></li></ul></li><li><a href="MacdIndicator.html">MacdIndicator</a><ul class='methods'><li data-type='method'><a href="MacdIndicator.html#.getData">getData</a></li></ul></li><li><a href="MfiIndicator.html">MfiIndicator</a><ul class='methods'><li data-type='method'><a href="MfiIndicator.html#.getData">getData</a></li></ul></li><li><a href="ObvIndicator.html">ObvIndicator</a><ul class='methods'><li data-type='method'><a href="ObvIndicator.html#.getData">getData</a></li></ul></li><li><a href="PatternRecognitionIndicator.html">PatternRecognitionIndicator</a><ul class='methods'><li data-type='method'><a href="PatternRecognitionIndicator.html#.getPatterns">getPatterns</a></li></ul></li><li><a href="PatternRecognitionIndicator.AbandonedBaby.html">AbandonedBaby</a></li><li><a href="PatternRecognitionIndicator.BearishEngulfingPattern.html">BearishEngulfingPattern</a></li><li><a href="PatternRecognitionIndicator.BearishHammer.html">BearishHammer</a></li><li><a href="PatternRecognitionIndicator.BearishHarami.html">BearishHarami</a></li><li><a href="PatternRecognitionIndicator.BearishHaramiCross.html">BearishHaramiCross</a></li><li><a href="PatternRecognitionIndicator.BearishInvertedHammer.html">BearishInvertedHammer</a></li><li><a href="PatternRecognitionIndicator.BearishMarubozu.html">BearishMarubozu</a></li><li><a href="PatternRecognitionIndicator.BearishSpinningTop.html">BearishSpinningTop</a></li><li><a href="PatternRecognitionIndicator.BullishEngulfingPattern.html">BullishEngulfingPattern</a></li><li><a href="PatternRecognitionIndicator.BullishHammer.html">BullishHammer</a></li><li><a href="PatternRecognitionIndicator.BullishHarami.html">BullishHarami</a></li><li><a href="PatternRecognitionIndicator.BullishHaramiCross.html">BullishHaramiCross</a></li><li><a href="PatternRecognitionIndicator.BullishInvertedHammer.html">BullishInvertedHammer</a></li><li><a href="PatternRecognitionIndicator.BullishMarubozu.html">BullishMarubozu</a></li><li><a href="PatternRecognitionIndicator.BullishSpinningTop.html">BullishSpinningTop</a></li><li><a href="PatternRecognitionIndicator.DarkCloudCover.html">DarkCloudCover</a></li><li><a href="PatternRecognitionIndicator.Doji.html">Doji</a></li><li><a href="PatternRecognitionIndicator.DownsideTasukiGap.html">DownsideTasukiGap</a></li><li><a href="PatternRecognitionIndicator.DragonFlyDoji.html">DragonFlyDoji</a></li><li><a href="PatternRecognitionIndicator.EveningDojiStar.html">EveningDojiStar</a></li><li><a href="PatternRecognitionIndicator.EveningStar.html">EveningStar</a></li><li><a href="PatternRecognitionIndicator.GraveStoneDoji.html">GraveStoneDoji</a></li><li><a href="PatternRecognitionIndicator.HammerPattern.html">HammerPattern</a></li><li><a href="PatternRecognitionIndicator.HammerPatternUnconfirmed.html">HammerPatternUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.HangingMan.html">HangingMan</a></li><li><a href="PatternRecognitionIndicator.HangingManUnconfirmed.html">HangingManUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.MorningDojiStar.html">MorningDojiStar</a></li><li><a href="PatternRecognitionIndicator.MorningStar.html">MorningStar</a></li><li><a href="PatternRecognitionIndicator.PiercingLine.html">PiercingLine</a></li><li><a href="PatternRecognitionIndicator.ShootingStar.html">ShootingStar</a></li><li><a href="PatternRecognitionIndicator.ShootingStarUnconfirmed.html">ShootingStarUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.ThreeBlackCrows.html">ThreeBlackCrows</a></li><li><a href="PatternRecognitionIndicator.ThreeWhiteSoldiers.html">ThreeWhiteSoldiers</a></li><li><a href="PatternRecognitionIndicator.TweezerBottom.html">TweezerBottom</a></li><li><a href="PatternRecognitionIndicator.TweezerTop.html">TweezerTop</a></li><li><a href="PsarIndicator.html">PsarIndicator</a><ul class='methods'><li data-type='method'><a href="PsarIndicator.html#.getData">getData</a></li></ul></li><li><a href="RocIndicator.html">RocIndicator</a><ul class='methods'><li data-type='method'><a href="RocIndicator.html#.getData">getData</a></li></ul></li><li><a href="RsiIndicator.html">RsiIndicator</a><ul class='methods'><li data-type='method'><a href="RsiIndicator.html#.getData">getData</a></li></ul></li><li><a href="Sma3Indicator.html">Sma3Indicator</a><ul class='methods'><li data-type='method'><a href="Sma3Indicator.html#.getData">getData</a></li></ul></li><li><a href="SmaIndicator.html">SmaIndicator</a><ul class='methods'><li data-type='method'><a href="SmaIndicator.html#.getData">getData</a></li></ul></li><li><a href="StochasticIndicator.html">StochasticIndicator</a><ul class='methods'><li data-type='method'><a href="StochasticIndicator.html#.getData">getData</a></li></ul></li><li><a href="SuperTrendIndicator.html">SuperTrendIndicator</a><ul class='methods'><li data-type='method'><a href="SuperTrendIndicator.html#.getData">getData</a></li></ul></li><li><a href="TrixIndicator.html">TrixIndicator</a><ul class='methods'><li data-type='method'><a href="TrixIndicator.html#.getData">getData</a></li></ul></li><li><a href="VolumeProfile.html">VolumeProfile</a></li><li><a href="VolumeWeightedAvgPrice.html">VolumeWeightedAvgPrice</a><ul class='methods'><li data-type='method'><a href="VolumeWeightedAvgPrice.html#.getData">getData</a></li></ul></li><li><a href="WeighteMovingAvg.html">WeighteMovingAvg</a><ul class='methods'><li data-type='method'><a href="WeighteMovingAvg.html#.getData">getData</a></li></ul></li><li><a href="WildersSmoothingWeighteMovingAvg.html">WildersSmoothingWeighteMovingAvg</a><ul class='methods'><li data-type='method'><a href="WildersSmoothingWeighteMovingAvg.html#.getData">getData</a></li></ul></li><li><a href="WilliamsRIndicator.html">WilliamsRIndicator</a><ul class='methods'><li data-type='method'><a href="WilliamsRIndicator.html#.getData">getData</a></li></ul></li><li><a href="Woodies.html">Woodies</a><ul class='methods'><li data-type='method'><a href="Woodies.html#.getData">getData</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">FloorPivots</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            FloorPivots
+        
+        </h2>
+        
+            <div class="class-description usertext">Class FloorPivots</div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="FloorPivots"><span class="type-signature"></span>new FloorPivots<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Indicators.js.html">Indicators.js</a>, <a href="Indicators.js.html#line97">line 97</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getData"><span class="type-signature type-signature-static">(static) </span>getData<span class="signature">(o, h, l, c, v, args, candles)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Indicators.js.html">Indicators.js</a>, <a href="Indicators.js.html#line123">line 123</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>o</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Opening Candles</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>h</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Higher High Candles</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>l</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Lower Low Candles</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>c</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Closing Candles</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>v</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Volume Data</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">null</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>candles</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    [floorPivot]
+</div>
+
+
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Apr 15 2023 11:05:48 GMT+0100 (British Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

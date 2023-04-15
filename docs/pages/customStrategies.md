@@ -27,10 +27,10 @@ static STATE_ENTER_LONG ='state.enterLong';
 // A state that signals the Strategy has determined a Short Entry
 static STATE_ENTER_SHORT ='state.enterShort';
 
-// Moving Average specific state, can be usefull if you like to wait for a crossing up of different moving averages
+// Moving Average specific state, can be useful if you like to wait for a crossing up of different moving averages
 static STATE_AWAIT_CROSS_UP ='state.awaitCross.up';
 
-// Moving Average specific state, can be usefull if you like to wait for a crossing down of different moving averages
+// Moving Average specific state, can be useful if you like to wait for a crossing down of different moving averages
 static STATE_AWAIT_CROSS_DOWN ='state.awaitCross.down';
 
 // A state that signals we are in a idle phase and wait for a take profit signal
@@ -42,7 +42,7 @@ static STATE_STOP_LOSS_TRIGGERED ='state.stopLoss.triggered';
 // A state that signals that we are waiting for a Limit Order to be filled
 static STATE_AWAIT_ORDER_FILLED ='state.await.order.filled';
 
-// A Strategy specific state, can be usefull if you like to wait for a dedicated confirmation logic to resolve to true
+// A Strategy specific state, can be useful if you like to wait for a dedicated confirmation logic to resolve to true
 static STATE_AWAIT_CONFIRMATION = 'state.await.confirmation';
 
 // A Strategy specific state, signalling that the current trend is up, this could be handy if you want to identify and keep track of a current price trend
@@ -51,7 +51,10 @@ static STATE_TREND_UP = 'state.trend.up';
 // A Strategy specific state, signalling that the current trend is down, this could be handy if you want to identify and keep track of a current price trend
 static STATE_TREND_DOWN = 'state.trend.down';
 
-// A Engine specific state, signalling to the engine that the current Strategy is a independent Strategy i.e. Trades and Orders managed from within the Strategy and Engine should not react to it state State Changes,  
+// A state that signals to the engine to trigger an alert!
+static STATE_TRIGGER_ALERT = 'state.trigger.alert';
+
+// A Engine specific state, signalling to the engine that the current Strategy is a independent Strategy i.e. Trades and Orders managed from within the Strategy and Engine should not react to State Changes,  
 static STATE_CONTEXT_INDEPENDENT = 'state.context.independent';
 
 ```
