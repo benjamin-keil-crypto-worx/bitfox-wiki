@@ -442,7 +442,7 @@ _(We recommend using the provided builder interface to initialize an engine belo
   "strategyExtras": {},
   
   /*----------------------------------------------------------------------------------*/
-  /*                      Alert & Notificaion  Parameters                             */
+  /*                      Alert & Notification  Parameters                             */
   /*----------------------------------------------------------------------------------*/
 
   // The Type of Notification to use we currently support Email|Slack|Telegram  

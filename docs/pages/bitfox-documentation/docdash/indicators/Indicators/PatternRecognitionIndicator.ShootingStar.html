@@ -1,48 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    
-    <meta charset="utf-8">
-    <title>ShootingStar - Documentation</title>
-    
-    
-    <script src="scripts/prettify/prettify.js"></script>
-    <script src="scripts/prettify/lang-css.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
-    <script src="scripts/nav.js" defer></script>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Class: ShootingStar</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
 </head>
+
 <body>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="navicon-button x">
-  <div class="navicon"></div>
-</label>
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="AdlIndicator.html">AdlIndicator</a></li><li><a href="AdxIndicator.html">AdxIndicator</a></li><li><a href="AtrIndicator.html">AtrIndicator</a></li><li><a href="AwesomeOscillatorIndicator.html">AwesomeOscillatorIndicator</a></li><li><a href="BollingerIndicator.html">BollingerIndicator</a></li><li><a href="CciIndicator.html">CciIndicator</a></li><li><a href="EMAIndicator.html">EMAIndicator</a></li><li><a href="Ema10And20.html">Ema10And20</a></li><li><a href="Ema3Indicator.html">Ema3Indicator</a></li><li><a href="Ema4Indicator.html">Ema4Indicator</a></li><li><a href="FloorPivots.html">FloorPivots</a></li><li><a href="ForceIndexIndiactor.html">ForceIndexIndiactor</a></li><li><a href="IchimokuCloudIndicator.html">IchimokuCloudIndicator</a></li><li><a href="IndicatorList.html">IndicatorList</a></li><li><a href="IndicatorUtils.html">IndicatorUtils</a></li><li><a href="IndicatorUtils.CrossDown.html">IndicatorUtils.CrossDown</a></li><li><a href="IndicatorUtils.CrossOver.html">IndicatorUtils.CrossOver</a></li><li><a href="IndicatorUtils.CrossUp.html">IndicatorUtils.CrossUp</a></li><li><a href="IndicatorUtils.Highest.html">IndicatorUtils.Highest</a></li><li><a href="IndicatorUtils.Lowest.html">IndicatorUtils.Lowest</a></li><li><a href="KsiIndicator.html">KsiIndicator</a></li><li><a href="MacdIndicator.html">MacdIndicator</a></li><li><a href="MfiIndicator.html">MfiIndicator</a></li><li><a href="ObvIndicator.html">ObvIndicator</a></li><li><a href="PatternRecognitionIndicator.html">PatternRecognitionIndicator</a></li><li><a href="PatternRecognitionIndicator.AbandonedBaby.html">PatternRecognitionIndicator.AbandonedBaby</a></li><li><a href="PatternRecognitionIndicator.BearishEngulfingPattern.html">PatternRecognitionIndicator.BearishEngulfingPattern</a></li><li><a href="PatternRecognitionIndicator.BearishHammer.html">PatternRecognitionIndicator.BearishHammer</a></li><li><a href="PatternRecognitionIndicator.BearishHarami.html">PatternRecognitionIndicator.BearishHarami</a></li><li><a href="PatternRecognitionIndicator.BearishHaramiCross.html">PatternRecognitionIndicator.BearishHaramiCross</a></li><li><a href="PatternRecognitionIndicator.BearishInvertedHammer.html">PatternRecognitionIndicator.BearishInvertedHammer</a></li><li><a href="PatternRecognitionIndicator.BearishMarubozu.html">PatternRecognitionIndicator.BearishMarubozu</a></li><li><a href="PatternRecognitionIndicator.BearishSpinningTop.html">PatternRecognitionIndicator.BearishSpinningTop</a></li><li><a href="PatternRecognitionIndicator.BullishEngulfingPattern.html">PatternRecognitionIndicator.BullishEngulfingPattern</a></li><li><a href="PatternRecognitionIndicator.BullishHammer.html">PatternRecognitionIndicator.BullishHammer</a></li><li><a href="PatternRecognitionIndicator.BullishHarami.html">PatternRecognitionIndicator.BullishHarami</a></li><li><a href="PatternRecognitionIndicator.BullishHaramiCross.html">PatternRecognitionIndicator.BullishHaramiCross</a></li><li><a href="PatternRecognitionIndicator.BullishInvertedHammer.html">PatternRecognitionIndicator.BullishInvertedHammer</a></li><li><a href="PatternRecognitionIndicator.BullishMarubozu.html">PatternRecognitionIndicator.BullishMarubozu</a></li><li><a href="PatternRecognitionIndicator.BullishSpinningTop.html">PatternRecognitionIndicator.BullishSpinningTop</a></li><li><a href="PatternRecognitionIndicator.DarkCloudCover.html">PatternRecognitionIndicator.DarkCloudCover</a></li><li><a href="PatternRecognitionIndicator.Doji.html">PatternRecognitionIndicator.Doji</a></li><li><a href="PatternRecognitionIndicator.DownsideTasukiGap.html">PatternRecognitionIndicator.DownsideTasukiGap</a></li><li><a href="PatternRecognitionIndicator.DragonFlyDoji.html">PatternRecognitionIndicator.DragonFlyDoji</a></li><li><a href="PatternRecognitionIndicator.EveningDojiStar.html">PatternRecognitionIndicator.EveningDojiStar</a></li><li><a href="PatternRecognitionIndicator.EveningStar.html">PatternRecognitionIndicator.EveningStar</a></li><li><a href="PatternRecognitionIndicator.GraveStoneDoji.html">PatternRecognitionIndicator.GraveStoneDoji</a></li><li><a href="PatternRecognitionIndicator.HammerPattern.html">PatternRecognitionIndicator.HammerPattern</a></li><li><a href="PatternRecognitionIndicator.HammerPatternUnconfirmed.html">PatternRecognitionIndicator.HammerPatternUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.HangingMan.html">PatternRecognitionIndicator.HangingMan</a></li><li><a href="PatternRecognitionIndicator.HangingManUnconfirmed.html">PatternRecognitionIndicator.HangingManUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.MorningDojiStar.html">PatternRecognitionIndicator.MorningDojiStar</a></li><li><a href="PatternRecognitionIndicator.MorningStar.html">PatternRecognitionIndicator.MorningStar</a></li><li><a href="PatternRecognitionIndicator.PiercingLine.html">PatternRecognitionIndicator.PiercingLine</a></li><li><a href="PatternRecognitionIndicator.ShootingStar.html">PatternRecognitionIndicator.ShootingStar</a></li><li><a href="PatternRecognitionIndicator.ShootingStarUnconfirmed.html">PatternRecognitionIndicator.ShootingStarUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.ThreeBlackCrows.html">PatternRecognitionIndicator.ThreeBlackCrows</a></li><li><a href="PatternRecognitionIndicator.ThreeWhiteSoldiers.html">PatternRecognitionIndicator.ThreeWhiteSoldiers</a></li><li><a href="PatternRecognitionIndicator.TweezerBottom.html">PatternRecognitionIndicator.TweezerBottom</a></li><li><a href="PatternRecognitionIndicator.TweezerTop.html">PatternRecognitionIndicator.TweezerTop</a></li><li><a href="PsarIndicator.html">PsarIndicator</a></li><li><a href="RocIndicator.html">RocIndicator</a></li><li><a href="RsiIndicator.html">RsiIndicator</a></li><li><a href="Sma3Indicator.html">Sma3Indicator</a></li><li><a href="SmaIndicator.html">SmaIndicator</a></li><li><a href="StochasticIndicator.html">StochasticIndicator</a></li><li><a href="SuperTrendIndicator.html">SuperTrendIndicator</a></li><li><a href="TrixIndicator.html">TrixIndicator</a></li><li><a href="VolumeProfile.html">VolumeProfile</a></li><li><a href="VolumeWeightedAvgPrice.html">VolumeWeightedAvgPrice</a></li><li><a href="WeighteMovingAvg.html">WeighteMovingAvg</a></li><li><a href="WildersSmoothingWeighteMovingAvg.html">WildersSmoothingWeighteMovingAvg</a></li><li><a href="WilliamsRIndicator.html">WilliamsRIndicator</a></li><li><a href="Woodies.html">Woodies</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html">Global</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
 
-<label for="nav-trigger" class="overlay"></label>
-
-<nav >
-    
-    
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AdlIndicator.html">AdlIndicator</a><ul class='methods'><li data-type='method'><a href="AdlIndicator.html#.getData">getData</a></li></ul></li><li><a href="AdxIndicator.html">AdxIndicator</a><ul class='methods'><li data-type='method'><a href="AdxIndicator.html#.getData">getData</a></li></ul></li><li><a href="AtrIndicator.html">AtrIndicator</a><ul class='methods'><li data-type='method'><a href="AtrIndicator.html#.getData">getData</a></li></ul></li><li><a href="AwesomeOscillatorIndicator.html">AwesomeOscillatorIndicator</a><ul class='methods'><li data-type='method'><a href="AwesomeOscillatorIndicator.html#.getData">getData</a></li></ul></li><li><a href="BollingerIndicator.html">BollingerIndicator</a><ul class='methods'><li data-type='method'><a href="BollingerIndicator.html#.getData">getData</a></li></ul></li><li><a href="CciIndicator.html">CciIndicator</a><ul class='methods'><li data-type='method'><a href="CciIndicator.html#.getData">getData</a></li></ul></li><li><a href="EMAIndicator.html">EMAIndicator</a><ul class='methods'><li data-type='method'><a href="EMAIndicator.html#.getData">getData</a></li></ul></li><li><a href="Ema10And20.html">Ema10And20</a><ul class='methods'><li data-type='method'><a href="Ema10And20.html#.getData">getData</a></li></ul></li><li><a href="Ema3Indicator.html">Ema3Indicator</a><ul class='methods'><li data-type='method'><a href="Ema3Indicator.html#.getData">getData</a></li></ul></li><li><a href="Ema4Indicator.html">Ema4Indicator</a><ul class='methods'><li data-type='method'><a href="Ema4Indicator.html#.getData">getData</a></li></ul></li><li><a href="FloorPivots.html">FloorPivots</a><ul class='methods'><li data-type='method'><a href="FloorPivots.html#.getData">getData</a></li></ul></li><li><a href="ForceIndexIndiactor.html">ForceIndexIndiactor</a><ul class='methods'><li data-type='method'><a href="ForceIndexIndiactor.html#.getData">getData</a></li></ul></li><li><a href="IchimokuCloudIndicator.html">IchimokuCloudIndicator</a><ul class='methods'><li data-type='method'><a href="IchimokuCloudIndicator.html#.getData">getData</a></li></ul></li><li><a href="IndicatorList.html">IndicatorList</a><ul class='methods'><li data-type='method'><a href="IndicatorList.html#.getData">getData</a></li></ul></li><li><a href="IndicatorUtils.html">IndicatorUtils</a></li><li><a href="IndicatorUtils.CrossDown.html">CrossDown</a></li><li><a href="IndicatorUtils.CrossOver.html">CrossOver</a></li><li><a href="IndicatorUtils.CrossUp.html">CrossUp</a></li><li><a href="IndicatorUtils.Highest.html">Highest</a></li><li><a href="IndicatorUtils.Lowest.html">Lowest</a></li><li><a href="KsiIndicator.html">KsiIndicator</a><ul class='methods'><li data-type='method'><a href="KsiIndicator.html#.getData">getData</a></li></ul></li><li><a href="MacdIndicator.html">MacdIndicator</a><ul class='methods'><li data-type='method'><a href="MacdIndicator.html#.getData">getData</a></li></ul></li><li><a href="MfiIndicator.html">MfiIndicator</a><ul class='methods'><li data-type='method'><a href="MfiIndicator.html#.getData">getData</a></li></ul></li><li><a href="ObvIndicator.html">ObvIndicator</a><ul class='methods'><li data-type='method'><a href="ObvIndicator.html#.getData">getData</a></li></ul></li><li><a href="PatternRecognitionIndicator.html">PatternRecognitionIndicator</a><ul class='methods'><li data-type='method'><a href="PatternRecognitionIndicator.html#.getPatterns">getPatterns</a></li></ul></li><li><a href="PatternRecognitionIndicator.AbandonedBaby.html">AbandonedBaby</a></li><li><a href="PatternRecognitionIndicator.BearishEngulfingPattern.html">BearishEngulfingPattern</a></li><li><a href="PatternRecognitionIndicator.BearishHammer.html">BearishHammer</a></li><li><a href="PatternRecognitionIndicator.BearishHarami.html">BearishHarami</a></li><li><a href="PatternRecognitionIndicator.BearishHaramiCross.html">BearishHaramiCross</a></li><li><a href="PatternRecognitionIndicator.BearishInvertedHammer.html">BearishInvertedHammer</a></li><li><a href="PatternRecognitionIndicator.BearishMarubozu.html">BearishMarubozu</a></li><li><a href="PatternRecognitionIndicator.BearishSpinningTop.html">BearishSpinningTop</a></li><li><a href="PatternRecognitionIndicator.BullishEngulfingPattern.html">BullishEngulfingPattern</a></li><li><a href="PatternRecognitionIndicator.BullishHammer.html">BullishHammer</a></li><li><a href="PatternRecognitionIndicator.BullishHarami.html">BullishHarami</a></li><li><a href="PatternRecognitionIndicator.BullishHaramiCross.html">BullishHaramiCross</a></li><li><a href="PatternRecognitionIndicator.BullishInvertedHammer.html">BullishInvertedHammer</a></li><li><a href="PatternRecognitionIndicator.BullishMarubozu.html">BullishMarubozu</a></li><li><a href="PatternRecognitionIndicator.BullishSpinningTop.html">BullishSpinningTop</a></li><li><a href="PatternRecognitionIndicator.DarkCloudCover.html">DarkCloudCover</a></li><li><a href="PatternRecognitionIndicator.Doji.html">Doji</a></li><li><a href="PatternRecognitionIndicator.DownsideTasukiGap.html">DownsideTasukiGap</a></li><li><a href="PatternRecognitionIndicator.DragonFlyDoji.html">DragonFlyDoji</a></li><li><a href="PatternRecognitionIndicator.EveningDojiStar.html">EveningDojiStar</a></li><li><a href="PatternRecognitionIndicator.EveningStar.html">EveningStar</a></li><li><a href="PatternRecognitionIndicator.GraveStoneDoji.html">GraveStoneDoji</a></li><li><a href="PatternRecognitionIndicator.HammerPattern.html">HammerPattern</a></li><li><a href="PatternRecognitionIndicator.HammerPatternUnconfirmed.html">HammerPatternUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.HangingMan.html">HangingMan</a></li><li><a href="PatternRecognitionIndicator.HangingManUnconfirmed.html">HangingManUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.MorningDojiStar.html">MorningDojiStar</a></li><li><a href="PatternRecognitionIndicator.MorningStar.html">MorningStar</a></li><li><a href="PatternRecognitionIndicator.PiercingLine.html">PiercingLine</a></li><li><a href="PatternRecognitionIndicator.ShootingStar.html">ShootingStar</a></li><li><a href="PatternRecognitionIndicator.ShootingStarUnconfirmed.html">ShootingStarUnconfirmed</a></li><li><a href="PatternRecognitionIndicator.ThreeBlackCrows.html">ThreeBlackCrows</a></li><li><a href="PatternRecognitionIndicator.ThreeWhiteSoldiers.html">ThreeWhiteSoldiers</a></li><li><a href="PatternRecognitionIndicator.TweezerBottom.html">TweezerBottom</a></li><li><a href="PatternRecognitionIndicator.TweezerTop.html">TweezerTop</a></li><li><a href="PsarIndicator.html">PsarIndicator</a><ul class='methods'><li data-type='method'><a href="PsarIndicator.html#.getData">getData</a></li></ul></li><li><a href="RocIndicator.html">RocIndicator</a><ul class='methods'><li data-type='method'><a href="RocIndicator.html#.getData">getData</a></li></ul></li><li><a href="RsiIndicator.html">RsiIndicator</a><ul class='methods'><li data-type='method'><a href="RsiIndicator.html#.getData">getData</a></li></ul></li><li><a href="Sma3Indicator.html">Sma3Indicator</a><ul class='methods'><li data-type='method'><a href="Sma3Indicator.html#.getData">getData</a></li></ul></li><li><a href="SmaIndicator.html">SmaIndicator</a><ul class='methods'><li data-type='method'><a href="SmaIndicator.html#.getData">getData</a></li></ul></li><li><a href="StochasticIndicator.html">StochasticIndicator</a><ul class='methods'><li data-type='method'><a href="StochasticIndicator.html#.getData">getData</a></li></ul></li><li><a href="SuperTrendIndicator.html">SuperTrendIndicator</a><ul class='methods'><li data-type='method'><a href="SuperTrendIndicator.html#.getData">getData</a></li></ul></li><li><a href="TrixIndicator.html">TrixIndicator</a><ul class='methods'><li data-type='method'><a href="TrixIndicator.html#.getData">getData</a></li></ul></li><li><a href="VolumeProfile.html">VolumeProfile</a></li><li><a href="VolumeWeightedAvgPrice.html">VolumeWeightedAvgPrice</a><ul class='methods'><li data-type='method'><a href="VolumeWeightedAvgPrice.html#.getData">getData</a></li></ul></li><li><a href="WeighteMovingAvg.html">WeighteMovingAvg</a><ul class='methods'><li data-type='method'><a href="WeighteMovingAvg.html#.getData">getData</a></li></ul></li><li><a href="WildersSmoothingWeighteMovingAvg.html">WildersSmoothingWeighteMovingAvg</a><ul class='methods'><li data-type='method'><a href="WildersSmoothingWeighteMovingAvg.html#.getData">getData</a></li></ul></li><li><a href="WilliamsRIndicator.html">WilliamsRIndicator</a><ul class='methods'><li data-type='method'><a href="WilliamsRIndicator.html#.getData">getData</a></li></ul></li><li><a href="Woodies.html">Woodies</a><ul class='methods'><li data-type='method'><a href="Woodies.html#.getData">getData</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
-    
-</nav>
-
-<div id="main">
-    
-    <h1 class="page-title">ShootingStar</h1>
-    
-
-    
+</div>
+</div>
 
 
+<div class="container" id="toc-content">
+<div class="row">
 
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
 
+	<h1 class="page-title">Class: ShootingStar</h1>
 <section>
 
 <header>
@@ -50,38 +80,24 @@
         <h2>
             <span class="ancestors"><a href="PatternRecognitionIndicator.html">PatternRecognitionIndicator</a>.</span>
         
-        
-            ShootingStar
-        
+        ShootingStar
         </h2>
         
     
 </header>
 
+
 <article>
+    <div class="container-overview">
     
-        <div class="container-overview">
         
-            
-
+<hr>
+<dt>
+    <h4 class="name" id="ShootingStar"><span class="type-signature"></span>new ShootingStar(o, h, l, c)</h4>
     
-
-    <h4 class="name" id="ShootingStar"><span class="type-signature"></span>new ShootingStar<span class="signature">(o, h, l, c)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Indicators.js.html">Indicators.js</a>, <a href="Indicators.js.html#line1516">line 1516</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -90,46 +106,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -247,31 +228,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     returns true if a pattern is detected
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -284,23 +303,22 @@
     </dd>
 </dl>
 
-    
-
-
 
         
-        </div>
+
     
+</dd>
+
+    
+    </div>
 
     
 
     
 
     
-    
-    
 
-     
+    
 
     
 
@@ -318,20 +336,131 @@
 
 
 
-    
-    
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
 </div>
 
-<br class="clear">
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Apr 15 2023 13:16:24 GMT+0100 (British Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a>
+	
+		on 2023-04-16T11:02:10+01:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
 </footer>
 
-<script>prettyPrint();</script>
-<script src="scripts/polyfill.js"></script>
-<script src="scripts/linenumber.js"></script>
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
 
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
 
 
 </body>
