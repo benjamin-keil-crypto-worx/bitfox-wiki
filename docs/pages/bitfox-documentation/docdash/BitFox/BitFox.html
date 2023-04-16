@@ -1,89 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    
-    <meta charset="utf-8">
-    <title>BitFox - Documentation</title>
-    
-    
-    <script src="scripts/prettify/prettify.js"></script>
-    <script src="scripts/prettify/lang-css.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
-    <script src="scripts/nav.js" defer></script>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Class: BitFox</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
 </head>
+
 <body>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="navicon-button x">
-  <div class="navicon"></div>
-</label>
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="BitFox.html">BitFox</a></li><li><a href="EngineBuilder.html">EngineBuilder</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html">Global</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
 
-<label for="nav-trigger" class="overlay"></label>
-
-<nav >
-    
-    
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BitFox.html">BitFox</a><ul class='methods'><li data-type='method'><a href="BitFox.html#applyStrategy">applyStrategy</a></li><li data-type='method'><a href="BitFox.html#applySymbol">applySymbol</a></li><li data-type='method'><a href="BitFox.html#checkIsLongInProfit">checkIsLongInProfit</a></li><li data-type='method'><a href="BitFox.html#checkIsOrderFilled">checkIsOrderFilled</a></li><li data-type='method'><a href="BitFox.html#checkIsShortInProfit">checkIsShortInProfit</a></li><li data-type='method'><a href="BitFox.html#enterLong">enterLong</a></li><li data-type='method'><a href="BitFox.html#enterShort">enterShort</a></li><li data-type='method'><a href="BitFox.html#executeStrategyContext">executeStrategyContext</a></li><li data-type='method'><a href="BitFox.html#getCurrencies">getCurrencies</a></li><li data-type='method'><a href="BitFox.html#getEventEmitter">getEventEmitter</a></li><li data-type='method'><a href="BitFox.html#getMarkets">getMarkets</a></li><li data-type='method'><a href="BitFox.html#getRateLimit">getRateLimit</a></li><li data-type='method'><a href="BitFox.html#getRequiredCredentials">getRequiredCredentials</a></li><li data-type='method'><a href="BitFox.html#getStrategy">getStrategy</a></li><li data-type='method'><a href="BitFox.html#getSymbols">getSymbols</a></li><li data-type='method'><a href="BitFox.html#getTimeFrames">getTimeFrames</a></li><li data-type='method'><a href="BitFox.html#getTimeout">getTimeout</a></li><li data-type='method'><a href="BitFox.html#notificationOff">notificationOff</a></li><li data-type='method'><a href="BitFox.html#notificationOn">notificationOn</a></li><li data-type='method'><a href="BitFox.html#on">on</a></li><li data-type='method'><a href="BitFox.html#run">run</a></li><li data-type='method'><a href="BitFox.html#runBackTest">runBackTest</a></li><li data-type='method'><a href="BitFox.html#setAlert">setAlert</a></li><li data-type='method'><a href="BitFox.html#setStrategy">setStrategy</a></li><li data-type='method'><a href="BitFox.html#setTestEngine">setTestEngine</a></li><li data-type='method'><a href="BitFox.html#setupAndLoadClient">setupAndLoadClient</a></li><li data-type='method'><a href="BitFox.html#stopLossLong">stopLossLong</a></li><li data-type='method'><a href="BitFox.html#stopLossShort">stopLossShort</a></li><li data-type='method'><a href="BitFox.html#takeProfit">takeProfit</a></li><li data-type='method'><a href="BitFox.html#takeProfitLong">takeProfitLong</a></li><li data-type='method'><a href="BitFox.html#takeProfitShort">takeProfitShort</a></li><li data-type='method'><a href="BitFox.html#turnOffTradeOperations">turnOffTradeOperations</a></li><li data-type='method'><a href="BitFox.html#turnOnTradeOperations">turnOnTradeOperations</a></li><li data-type='method'><a href="BitFox.html#.getExchanges">getExchanges</a></li><li data-type='method'><a href="BitFox.html#.init">init</a></li><li data-type='method'><a href="BitFox.html#.validateAlertArgs">validateAlertArgs</a></li><li data-type='method'><a href="BitFox.html#.validateStrategyArgs">validateStrategyArgs</a></li></ul></li><li><a href="EngineBuilder.html">EngineBuilder</a><ul class='methods'><li data-type='method'><a href="EngineBuilder.html#alertExtras">alertExtras</a></li><li data-type='method'><a href="EngineBuilder.html#build">build</a></li><li data-type='method'><a href="EngineBuilder.html#emailFrom">emailFrom</a></li><li data-type='method'><a href="EngineBuilder.html#emailTo">emailTo</a></li><li data-type='method'><a href="EngineBuilder.html#exchange">exchange</a></li><li data-type='method'><a href="EngineBuilder.html#exchangeToken">exchangeToken</a></li><li data-type='method'><a href="EngineBuilder.html#getConfig">getConfig</a></li><li data-type='method'><a href="EngineBuilder.html#initRequiredCreds">initRequiredCreds</a></li><li data-type='method'><a href="EngineBuilder.html#interval">interval</a></li><li data-type='method'><a href="EngineBuilder.html#key">key</a></li><li data-type='method'><a href="EngineBuilder.html#life">life</a></li><li data-type='method'><a href="EngineBuilder.html#login">login</a></li><li data-type='method'><a href="EngineBuilder.html#notifyOnly">notifyOnly</a></li><li data-type='method'><a href="EngineBuilder.html#options">options</a></li><li data-type='method'><a href="EngineBuilder.html#password">password</a></li><li data-type='method'><a href="EngineBuilder.html#pollRate">pollRate</a></li><li data-type='method'><a href="EngineBuilder.html#privateKey">privateKey</a></li><li data-type='method'><a href="EngineBuilder.html#profitPct">profitPct</a></li><li data-type='method'><a href="EngineBuilder.html#requiredCandles">requiredCandles</a></li><li data-type='method'><a href="EngineBuilder.html#secret">secret</a></li><li data-type='method'><a href="EngineBuilder.html#sidePreference">sidePreference</a></li><li data-type='method'><a href="EngineBuilder.html#stopLossPct">stopLossPct</a></li><li data-type='method'><a href="EngineBuilder.html#strategyExtras">strategyExtras</a></li><li data-type='method'><a href="EngineBuilder.html#symbol">symbol</a></li><li data-type='method'><a href="EngineBuilder.html#telegramChatId">telegramChatId</a></li><li data-type='method'><a href="EngineBuilder.html#twofa">twofa</a></li><li data-type='method'><a href="EngineBuilder.html#type">type</a></li><li data-type='method'><a href="EngineBuilder.html#uid">uid</a></li><li data-type='method'><a href="EngineBuilder.html#useLimitOrder">useLimitOrder</a></li><li data-type='method'><a href="EngineBuilder.html#walletAddress">walletAddress</a></li><li data-type='method'><a href="EngineBuilder.html#.builder">builder</a></li></ul></li></ul>
-    
-</nav>
-
-<div id="main">
-    
-    <h1 class="page-title">BitFox</h1>
-    
-
-    
+</div>
+</div>
 
 
+<div class="container" id="toc-content">
+<div class="row">
 
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
 
+	<h1 class="page-title">Class: BitFox</h1>
 <section>
 
 <header>
     
         <h2>
-        
-            BitFox
-        
+        BitFox
         </h2>
         
-            <div class="class-description usertext">Class BitFoxThis Class is main entry for any BitFox implementationFor proper usage and examples please visit: https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/#/</div>
+            <div class="class-description">Class BitFoxThis Class is main entry for any BitFox implementationFor proper usage and examples please visit: https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/#/</div>
         
     
 </header>
 
+
 <article>
+    <div class="container-overview">
     
-        <div class="container-overview">
         
-            
-
+<hr>
+<dt>
+    <h4 class="name" id="BitFox"><span class="type-signature"></span>new BitFox(args)</h4>
     
-    <h2>Constructor</h2>
     
-
-    <h4 class="name" id="BitFox"><span class="type-signature"></span>new BitFox<span class="signature">(args)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line434">line 434</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -92,46 +106,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -159,7 +138,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type"><a href="global.html#engineOptions">engineOptions</a></span>
 
 
 
@@ -177,26 +156,18 @@
     </tbody>
 </table>
 
+    
 
+    
+<dl class="details">
+    
 
+	
 
+	
 
+	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        </div>
     
 
     
@@ -204,10 +175,54 @@
     
 
     
-    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
     
 
-     
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -216,27 +231,15 @@
     
         <h3 class="subsection-title">Methods</h3>
 
-        
+        <dl>
             
-
+<hr>
+<dt>
+    <h4 class="name" id="applyStrategy"><span class="type-signature"></span>applyStrategy(strategy)</h4>
     
-
-    <h4 class="name" id="applyStrategy"><span class="type-signature"></span>applyStrategy<span class="signature">(strategy)</span><span class="type-signature"></span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line604">line 604</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -245,46 +248,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -330,45 +298,17 @@
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
 
-    <h4 class="name" id="applySymbol"><span class="type-signature"></span>applySymbol<span class="signature">(Bitfox)</span><span class="type-signature"></span></h4>
-
     
-
-
-
-
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line673">line 673</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -378,45 +318,65 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
     
 
-<table class="params">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="applySymbol"><span class="type-signature"></span>applySymbol(me)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -438,10 +398,16 @@
 
         <tr>
             
-                <td class="name"><code>Bitfox</code></td>
+                <td class="name"><code>me</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type"><a href="BitFox.html">BitFox</a></span>
+
+
+
             
             </td>
 
@@ -456,45 +422,17 @@
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
 
-    <h4 class="name" id="checkIsLongInProfit"><span class="type-signature type-signature-async">(async) </span>checkIsLongInProfit<span class="signature">(ticker, me)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line809">line 809</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -504,45 +442,65 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
     
 
-<table class="params">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="checkIsLongInProfit"><span class="type-signature">&lt;async> </span>checkIsLongInProfit(ticker, me)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -612,31 +570,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Checks if a current Long position or Trade is in profit.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -649,31 +645,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="checkIsOrderFilled"><span class="type-signature">&lt;async> </span>checkIsOrderFilled(me)</h4>
     
-
-    <h4 class="name" id="checkIsOrderFilled"><span class="type-signature type-signature-async">(async) </span>checkIsOrderFilled<span class="signature">(me)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line770">line 770</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -682,46 +668,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -767,31 +718,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Checks if a Limit Sell Order has been filled i.e. if its status has changed to 'closed'
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -804,31 +793,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="checkIsShortInProfit"><span class="type-signature">&lt;async> </span>checkIsShortInProfit(ticker, me)</h4>
     
-
-    <h4 class="name" id="checkIsShortInProfit"><span class="type-signature type-signature-async">(async) </span>checkIsShortInProfit<span class="signature">(ticker, me)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line796">line 796</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -837,46 +816,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -946,31 +890,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Checks if a current Short position or Trade is in profit.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -983,31 +965,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="enterLong"><span class="type-signature">&lt;async> </span>enterLong(me)</h4>
     
-
-    <h4 class="name" id="enterLong"><span class="type-signature type-signature-async">(async) </span>enterLong<span class="signature">(me)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line893">line 893</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -1016,46 +988,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1101,31 +1038,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     places a Sell order to enter a long trade/position
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1138,31 +1113,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="enterShort"><span class="type-signature">&lt;async> </span>enterShort(me)</h4>
     
-
-    <h4 class="name" id="enterShort"><span class="type-signature type-signature-async">(async) </span>enterShort<span class="signature">(me)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line878">line 878</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -1171,46 +1136,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1256,31 +1186,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     places a Sell order to enter a short trade/position
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1293,31 +1261,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="executeStrategyContext"><span class="type-signature">&lt;async> </span>executeStrategyContext(result, me)</h4>
     
-
-    <h4 class="name" id="executeStrategyContext"><span class="type-signature type-signature-async">(async) </span>executeStrategyContext<span class="signature">(result, me)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line687">line 687</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -1326,46 +1284,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -1435,31 +1358,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Processes the Strategy Response by evaluating the returned State of the Strategy
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1472,31 +1433,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getCurrencies"><span class="type-signature"></span>getCurrencies()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getCurrencies"><span class="type-signature"></span>getCurrencies<span class="signature">()</span><span class="type-signature"> &rarr; {currencies}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line955">line 955</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -1506,65 +1476,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     The available currencies on the target exchange
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1577,31 +1531,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getEventEmitter"><span class="type-signature"></span>getEventEmitter()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getEventEmitter"><span class="type-signature"></span>getEventEmitter<span class="signature">()</span><span class="type-signature"> &rarr; {EventHandler}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line537">line 537</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -1611,65 +1574,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     A getter to access the BitFox EventHandler instance
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1682,31 +1629,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getMarkets"><span class="type-signature"></span>getMarkets()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getMarkets"><span class="type-signature"></span>getMarkets<span class="signature">()</span><span class="type-signature"> &rarr; {markets}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line943">line 943</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -1716,65 +1672,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     the Market Structures on target Exchange
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1787,31 +1727,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getRateLimit"><span class="type-signature"></span>getRateLimit()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getRateLimit"><span class="type-signature"></span>getRateLimit<span class="signature">()</span><span class="type-signature"> &rarr; {rateLimit}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line937">line 937</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -1821,65 +1770,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     The rate limit set for API call's set by target Exchange
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -1892,31 +1825,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getRequiredCredentials"><span class="type-signature"></span>getRequiredCredentials()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getRequiredCredentials"><span class="type-signature"></span>getRequiredCredentials<span class="signature">()</span><span class="type-signature"> &rarr; {requiredCredentials}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line918">line 918</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -1926,102 +1868,95 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     requiredCredentials object to help with identifying what Credentials need to supplied for an exchange!
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
     <dd>
         
-<span class="param-type">requiredCredentials</span>
+<span class="param-type"><a href="global.html#requiredCredentials">requiredCredentials</a></span>
 
 
 
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getStrategy"><span class="type-signature"></span>getStrategy()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getStrategy"><span class="type-signature"></span>getStrategy<span class="signature">()</span><span class="type-signature"> &rarr; {Strategy}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line560">line 560</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -2031,65 +1966,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Return the current configured Strategy instance inside the BitFox Engine
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -2102,31 +2021,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getSymbols"><span class="type-signature"></span>getSymbols()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getSymbols"><span class="type-signature"></span>getSymbols<span class="signature">()</span><span class="type-signature"> &rarr; {symbols}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line949">line 949</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -2136,65 +2064,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     The Symbols available on the Target exchange
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -2207,31 +2119,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getTimeFrames"><span class="type-signature"></span>getTimeFrames()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getTimeFrames"><span class="type-signature"></span>getTimeFrames<span class="signature">()</span><span class="type-signature"> &rarr; {timeframes}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line925">line 925</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -2241,65 +2162,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     A instance with valid timeframe strings for an exchange!
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -2312,31 +2217,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="getTimeout"><span class="type-signature"></span>getTimeout()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="getTimeout"><span class="type-signature"></span>getTimeout<span class="signature">()</span><span class="type-signature"> &rarr; {timeout:Number}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line931">line 931</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -2346,65 +2260,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     The Timout for HTTP request on target exchange
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -2417,31 +2315,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="notificationOff"><span class="type-signature"></span>notificationOff()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="notificationOff"><span class="type-signature"></span>notificationOff<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="BitFox.html">BitFox</a>}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line595">line 595</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -2451,65 +2358,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     toggle Notifications  Off if you set this to true the Engine will not send out Notifications!
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -2522,31 +2413,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="notificationOn"><span class="type-signature"></span>notificationOn()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="notificationOn"><span class="type-signature"></span>notificationOn<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="BitFox.html">BitFox</a>}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line586">line 586</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -2556,65 +2456,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     toggle Notifications  Onn if you set this to true the Engine will send out Notifications!
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -2627,31 +2511,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="on"><span class="type-signature"></span>on(event, callback, eventArgs)</h4>
     
-
-    <h4 class="name" id="on"><span class="type-signature"></span>on<span class="signature">(event, callback, eventArgs)</span><span class="type-signature"></span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line910">line 910</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -2660,46 +2534,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -2797,7 +2636,7 @@
             
                 <td class="default">
                 
-                    <code>null</code>
+                    null
                 
                 </td>
             
@@ -2809,45 +2648,17 @@
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
 
-    <h4 class="name" id="run"><span class="type-signature type-signature-async">(async) </span>run<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line625">line 625</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -2857,65 +2668,123 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
+    
+</dd>
 
         
+            
+<hr>
+<dt>
+    <h4 class="name" id="run"><span class="type-signature">&lt;async> </span>run()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Engines Run method, this method is processing Strategy, Alert, Back-testing logic in                         Intervals when the Engine is providing internal logging and Event Listeners so that users can react                         to internal logical processes and events.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -2928,31 +2797,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="runBackTest"><span class="type-signature">&lt;async> </span>runBackTest(klineCandles)</h4>
     
-
-    <h4 class="name" id="runBackTest"><span class="type-signature type-signature-async">(async) </span>runBackTest<span class="signature">(klineCandles)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line731">line 731</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -2961,46 +2820,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -3046,31 +2870,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Executes a Backtest Process if the the engine is configured to run a Backtest
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -3083,31 +2945,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="setAlert"><span class="type-signature"></span>setAlert(args)</h4>
     
-
-    <h4 class="name" id="setAlert"><span class="type-signature"></span>setAlert<span class="signature">(args)</span><span class="type-signature"></span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line614">line 614</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -3116,46 +2968,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -3183,7 +3000,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type"><a href="global.html#engineOptions">engineOptions</a></span>
 
 
 
@@ -3201,45 +3018,17 @@
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
 
-    <h4 class="name" id="setStrategy"><span class="type-signature"></span>setStrategy<span class="signature">(args)</span><span class="type-signature"></span></h4>
-
     
-
-
-
-
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line551">line 551</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -3249,45 +3038,65 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
     
 
-<table class="params">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setStrategy"><span class="type-signature"></span>setStrategy(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -3315,7 +3124,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type"><a href="global.html#engineOptions">engineOptions</a></span>
 
 
 
@@ -3333,45 +3142,17 @@
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
 
-    <h4 class="name" id="setTestEngine"><span class="type-signature"></span>setTestEngine<span class="signature">(args)</span><span class="type-signature"></span></h4>
-
     
-
-
-
-
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line543">line 543</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -3381,45 +3162,65 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
     
 
-<table class="params">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setTestEngine"><span class="type-signature"></span>setTestEngine(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -3446,12 +3247,6 @@
 
             <td class="type">
             
-                
-<span class="param-type">any</span>
-
-
-
-            
             </td>
 
             
@@ -3465,45 +3260,17 @@
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
 
-    <h4 class="name" id="setupAndLoadClient"><span class="type-signature type-signature-async">(async) </span>setupAndLoadClient<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line529">line 529</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -3513,65 +3280,123 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
+    
+</dd>
 
         
+            
+<hr>
+<dt>
+    <h4 class="name" id="setupAndLoadClient"><span class="type-signature">&lt;async> </span>setupAndLoadClient()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Sets up the Exchange client and loads market Structures
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -3584,31 +3409,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="stopLossLong"><span class="type-signature">&lt;async> </span>stopLossLong(ticker, me, oB)</h4>
     
-
-    <h4 class="name" id="stopLossLong"><span class="type-signature type-signature-async">(async) </span>stopLossLong<span class="signature">(ticker, me, oB)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line823">line 823</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -3617,46 +3432,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -3750,31 +3530,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     executes a stop loss order for a long position.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -3787,31 +3605,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="stopLossShort"><span class="type-signature">&lt;async> </span>stopLossShort(ticker, me, oB)</h4>
     
-
-    <h4 class="name" id="stopLossShort"><span class="type-signature type-signature-async">(async) </span>stopLossShort<span class="signature">(ticker, me, oB)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line837">line 837</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -3820,46 +3628,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -3953,31 +3726,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     executes a stop loss order for a short position.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -3990,31 +3801,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="takeProfit"><span class="type-signature">&lt;async> </span>takeProfit(me)</h4>
     
-
-    <h4 class="name" id="takeProfit"><span class="type-signature type-signature-async">(async) </span>takeProfit<span class="signature">(me)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line755">line 755</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -4023,46 +3824,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -4108,31 +3874,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Starts the Take Profit flow by executing a market order
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -4145,31 +3949,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="takeProfitLong"><span class="type-signature">&lt;async> </span>takeProfitLong(ticker, me, oB)</h4>
     
-
-    <h4 class="name" id="takeProfitLong"><span class="type-signature type-signature-async">(async) </span>takeProfitLong<span class="signature">(ticker, me, oB)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line852">line 852</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -4178,46 +3972,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -4311,31 +4070,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Executes a sell order for long that has reached its maturity.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -4348,31 +4145,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id="takeProfitShort"><span class="type-signature">&lt;async> </span>takeProfitShort(ticker, me, oB)</h4>
     
-
-    <h4 class="name" id="takeProfitShort"><span class="type-signature type-signature-async">(async) </span>takeProfitShort<span class="signature">(ticker, me, oB)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line866">line 866</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -4381,46 +4168,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -4514,31 +4266,69 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Executes a sell order for long that has reached its maturity.
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -4551,31 +4341,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="turnOffTradeOperations"><span class="type-signature"></span>turnOffTradeOperations()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="turnOffTradeOperations"><span class="type-signature"></span>turnOffTradeOperations<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="BitFox.html">BitFox</a>}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line568">line 568</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -4585,65 +4384,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     toggle trade operations  Off if you set this to true the Engine will not execute its internal logic for Trade operations!
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -4656,31 +4439,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id="turnOnTradeOperations"><span class="type-signature"></span>turnOnTradeOperations()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id="turnOnTradeOperations"><span class="type-signature"></span>turnOnTradeOperations<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="BitFox.html">BitFox</a>}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line577">line 577</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -4690,65 +4482,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     toggle trade operations  Off if you set this to true the Engine will not execute its internal logic for Trade operations!
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -4761,31 +4537,40 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
+<hr>
+<dt>
+    <h4 class="name" id=".getExchanges"><span class="type-signature">&lt;static> </span>getExchanges()</h4>
+    
+    
+</dt>
+<dd>
 
     
 
-    <h4 class="name" id=".getExchanges"><span class="type-signature type-signature-static">(static) </span>getExchanges<span class="signature">()</span><span class="type-signature"> &rarr; {String:Array}</span></h4>
+    
 
     
 
+    
+    
 
-
-
+    
 <dl class="details">
     
 
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line450">line 450</a>
-    </li></ul></dd>
-    
+	
+
+	
+
+	
 
     
 
@@ -4795,65 +4580,49 @@
 
     
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
 
-    
 
-    
+	
 
-    
+	
 
-    
+	
 
-    
+	
 </dl>
 
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
+    
+    <h5>Returns:</h5>
+    
+            
 <div class="param-desc">
     Array of Available Symbols
 </div>
 
 
 
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -4866,31 +4635,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id=".init"><span class="type-signature">&lt;static> </span>init(args)</h4>
     
-
-    <h4 class="name" id=".init"><span class="type-signature type-signature-static">(static) </span>init<span class="signature">(args)</span><span class="type-signature"> &rarr; {<a href="BitFox.html">BitFox</a>}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line442">line 442</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -4899,46 +4658,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -4966,7 +4690,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type"><a href="global.html#engineOptions">engineOptions</a></span>
 
 
 
@@ -4977,34 +4701,72 @@
 
             
 
-            <td class="description last">the options or argument object to instantiate a BitFoxEngine we provide a easy-to-use Builder Interface                  please visit: https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/#/ for more info</td>
+            <td class="description last">options or argument object to instantiate a BitFoxEngine we provide a easy-to-use Builder Interface                  please visit: https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/#/ for more info</td>
         </tr>
 
     
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
 
 
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-
-
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -5017,31 +4779,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id=".validateAlertArgs"><span class="type-signature">&lt;static> </span>validateAlertArgs(args)</h4>
     
-
-    <h4 class="name" id=".validateAlertArgs"><span class="type-signature type-signature-static">(static) </span>validateAlertArgs<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line473">line 473</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -5050,46 +4802,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -5117,7 +4834,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type"><a href="global.html#engineOptions">engineOptions</a></span>
 
 
 
@@ -5135,27 +4852,65 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
 
 
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-
-
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -5168,31 +4923,21 @@
     </dd>
 </dl>
 
+
+        
+
     
-
-
+</dd>
 
         
             
-
+<hr>
+<dt>
+    <h4 class="name" id=".validateStrategyArgs"><span class="type-signature">&lt;static> </span>validateStrategyArgs(args)</h4>
     
-
-    <h4 class="name" id=".validateStrategyArgs"><span class="type-signature type-signature-static">(static) </span>validateStrategyArgs<span class="signature">(args)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
-
     
-
-
-
-
-<dl class="details">
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="BitFox.js.html">BitFox.js</a>, <a href="BitFox.js.html#line458">line 458</a>
-    </li></ul></dd>
-    
+</dt>
+<dd>
 
     
 
@@ -5201,46 +4946,11 @@
     
 
     
-
     
+        <h5>Parameters:</h5>
+        
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5 class="h5-parameters">Parameters:</h5>
-    
-
-<table class="params">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -5268,7 +4978,7 @@
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type"><a href="global.html#engineOptions">engineOptions</a></span>
 
 
 
@@ -5286,27 +4996,65 @@
     </tbody>
 </table>
 
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
 
 
 
+	
+
+	
+
+	
+
+	
+</dl>
 
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
 
 
-
-
-
-
-
-
-
-
-<h5 class="h5-returns">Returns:</h5>
-
-        
-
-
-<dl class="param-type">
+<dl>
     <dt>
         Type
     </dt>
@@ -5319,11 +5067,13 @@
     </dd>
 </dl>
 
-    
-
-
 
         
+
+    
+</dd>
+
+        </dl>
     
 
     
@@ -5336,20 +5086,131 @@
 
 
 
-    
-    
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
 </div>
 
-<br class="clear">
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Apr 15 2023 11:05:16 GMT+0100 (British Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a>
+	
+		on 2023-04-16T11:01:39+01:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
 </footer>
 
-<script>prettyPrint();</script>
-<script src="scripts/polyfill.js"></script>
-<script src="scripts/linenumber.js"></script>
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
 
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
 
 
 </body>

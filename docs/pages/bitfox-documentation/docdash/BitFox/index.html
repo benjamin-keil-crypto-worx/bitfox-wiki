@@ -1,83 +1,228 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    
-    <meta charset="utf-8">
-    <title>Home - Documentation</title>
-    
-    
-    <script src="scripts/prettify/prettify.js"></script>
-    <script src="scripts/prettify/lang-css.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
-    <script src="scripts/nav.js" defer></script>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Index</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.simplex.css">
+
 </head>
+
 <body>
 
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="navicon-button x">
-  <div class="navicon"></div>
-</label>
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="BitFox.html">BitFox</a></li><li><a href="EngineBuilder.html">EngineBuilder</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html">Global</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
 
-<label for="nav-trigger" class="overlay"></label>
-
-<nav >
-    
-    
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="BitFox.html">BitFox</a><ul class='methods'><li data-type='method'><a href="BitFox.html#applyStrategy">applyStrategy</a></li><li data-type='method'><a href="BitFox.html#applySymbol">applySymbol</a></li><li data-type='method'><a href="BitFox.html#checkIsLongInProfit">checkIsLongInProfit</a></li><li data-type='method'><a href="BitFox.html#checkIsOrderFilled">checkIsOrderFilled</a></li><li data-type='method'><a href="BitFox.html#checkIsShortInProfit">checkIsShortInProfit</a></li><li data-type='method'><a href="BitFox.html#enterLong">enterLong</a></li><li data-type='method'><a href="BitFox.html#enterShort">enterShort</a></li><li data-type='method'><a href="BitFox.html#executeStrategyContext">executeStrategyContext</a></li><li data-type='method'><a href="BitFox.html#getCurrencies">getCurrencies</a></li><li data-type='method'><a href="BitFox.html#getEventEmitter">getEventEmitter</a></li><li data-type='method'><a href="BitFox.html#getMarkets">getMarkets</a></li><li data-type='method'><a href="BitFox.html#getRateLimit">getRateLimit</a></li><li data-type='method'><a href="BitFox.html#getRequiredCredentials">getRequiredCredentials</a></li><li data-type='method'><a href="BitFox.html#getStrategy">getStrategy</a></li><li data-type='method'><a href="BitFox.html#getSymbols">getSymbols</a></li><li data-type='method'><a href="BitFox.html#getTimeFrames">getTimeFrames</a></li><li data-type='method'><a href="BitFox.html#getTimeout">getTimeout</a></li><li data-type='method'><a href="BitFox.html#notificationOff">notificationOff</a></li><li data-type='method'><a href="BitFox.html#notificationOn">notificationOn</a></li><li data-type='method'><a href="BitFox.html#on">on</a></li><li data-type='method'><a href="BitFox.html#run">run</a></li><li data-type='method'><a href="BitFox.html#runBackTest">runBackTest</a></li><li data-type='method'><a href="BitFox.html#setAlert">setAlert</a></li><li data-type='method'><a href="BitFox.html#setStrategy">setStrategy</a></li><li data-type='method'><a href="BitFox.html#setTestEngine">setTestEngine</a></li><li data-type='method'><a href="BitFox.html#setupAndLoadClient">setupAndLoadClient</a></li><li data-type='method'><a href="BitFox.html#stopLossLong">stopLossLong</a></li><li data-type='method'><a href="BitFox.html#stopLossShort">stopLossShort</a></li><li data-type='method'><a href="BitFox.html#takeProfit">takeProfit</a></li><li data-type='method'><a href="BitFox.html#takeProfitLong">takeProfitLong</a></li><li data-type='method'><a href="BitFox.html#takeProfitShort">takeProfitShort</a></li><li data-type='method'><a href="BitFox.html#turnOffTradeOperations">turnOffTradeOperations</a></li><li data-type='method'><a href="BitFox.html#turnOnTradeOperations">turnOnTradeOperations</a></li><li data-type='method'><a href="BitFox.html#.getExchanges">getExchanges</a></li><li data-type='method'><a href="BitFox.html#.init">init</a></li><li data-type='method'><a href="BitFox.html#.validateAlertArgs">validateAlertArgs</a></li><li data-type='method'><a href="BitFox.html#.validateStrategyArgs">validateStrategyArgs</a></li></ul></li><li><a href="EngineBuilder.html">EngineBuilder</a><ul class='methods'><li data-type='method'><a href="EngineBuilder.html#alertExtras">alertExtras</a></li><li data-type='method'><a href="EngineBuilder.html#build">build</a></li><li data-type='method'><a href="EngineBuilder.html#emailFrom">emailFrom</a></li><li data-type='method'><a href="EngineBuilder.html#emailTo">emailTo</a></li><li data-type='method'><a href="EngineBuilder.html#exchange">exchange</a></li><li data-type='method'><a href="EngineBuilder.html#exchangeToken">exchangeToken</a></li><li data-type='method'><a href="EngineBuilder.html#getConfig">getConfig</a></li><li data-type='method'><a href="EngineBuilder.html#initRequiredCreds">initRequiredCreds</a></li><li data-type='method'><a href="EngineBuilder.html#interval">interval</a></li><li data-type='method'><a href="EngineBuilder.html#key">key</a></li><li data-type='method'><a href="EngineBuilder.html#life">life</a></li><li data-type='method'><a href="EngineBuilder.html#login">login</a></li><li data-type='method'><a href="EngineBuilder.html#notifyOnly">notifyOnly</a></li><li data-type='method'><a href="EngineBuilder.html#options">options</a></li><li data-type='method'><a href="EngineBuilder.html#password">password</a></li><li data-type='method'><a href="EngineBuilder.html#pollRate">pollRate</a></li><li data-type='method'><a href="EngineBuilder.html#privateKey">privateKey</a></li><li data-type='method'><a href="EngineBuilder.html#profitPct">profitPct</a></li><li data-type='method'><a href="EngineBuilder.html#requiredCandles">requiredCandles</a></li><li data-type='method'><a href="EngineBuilder.html#secret">secret</a></li><li data-type='method'><a href="EngineBuilder.html#sidePreference">sidePreference</a></li><li data-type='method'><a href="EngineBuilder.html#stopLossPct">stopLossPct</a></li><li data-type='method'><a href="EngineBuilder.html#strategyExtras">strategyExtras</a></li><li data-type='method'><a href="EngineBuilder.html#symbol">symbol</a></li><li data-type='method'><a href="EngineBuilder.html#telegramChatId">telegramChatId</a></li><li data-type='method'><a href="EngineBuilder.html#twofa">twofa</a></li><li data-type='method'><a href="EngineBuilder.html#type">type</a></li><li data-type='method'><a href="EngineBuilder.html#uid">uid</a></li><li data-type='method'><a href="EngineBuilder.html#useLimitOrder">useLimitOrder</a></li><li data-type='method'><a href="EngineBuilder.html#walletAddress">walletAddress</a></li><li data-type='method'><a href="EngineBuilder.html#.builder">builder</a></li></ul></li></ul>
-    
-</nav>
-
-<div id="main">
-    
-
-    
-
-
-
-    
-
-
-    <section class="package">
-        <h3> </h3>		
-    </section>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-    
-    
+</div>
 </div>
 
-<br class="clear">
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Sat Apr 15 2023 11:05:16 GMT+0100 (British Summer Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a>
+	
+		on 2023-04-16T11:01:39+01:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
 </footer>
 
-<script>prettyPrint();</script>
-<script src="scripts/polyfill.js"></script>
-<script src="scripts/linenumber.js"></script>
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
 
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
 
 
 </body>
