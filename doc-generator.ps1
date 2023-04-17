@@ -7,5 +7,5 @@ param(
 jsdoc -c ./assets/config.json -t $bitfoxPath/node_modules/ink-docstrap/template  -d ./docs/pages/bitfox-documentation -R .\assets\BitFoxLanding.md
 
 git add .
-git commit -m "[Ben K] Automated Documetation Update"
+git commit -m "[Ben K] Automated Documentation Update"
 git push
