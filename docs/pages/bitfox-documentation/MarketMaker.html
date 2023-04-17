@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Class: BollingerIndicator</title>
+	<title>Documentation Class: MarketMaker</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -72,16 +72,18 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: BollingerIndicator</h1>
+	<h1 class="page-title">Class: MarketMaker</h1>
 <section>
 
 <header>
     
         <h2>
-        BollingerIndicator
+        MarketMaker
         </h2>
         
-            <div class="class-description">Class BollingerIndicator</div>
+            <div class="class-description">Class MarketMaker
+ <pre>This class is a simple implementation for a Market Maker StrategyThis class is a little Different from all other strategy implementations as it isan independent execution strategy, Independent strategies signal to the BitFox Engine that this strategy does not requirethe Engine to manage Trade entries and exits it is handled from within the strategy itself.The MarketMaker strategy signal to the BitFox engine that is a independent strategy by always returningthis.states.STATE_CONTEXT_INDEPENDENT state back to the calling engine.The MarketMakerStrategy is configured the following way1. you can set a flag stepThrough this would indicate that you don't want to calculate a spread value   to calculate entry end exit order but would like t step through the order book by a given number and se the values at the order book's index2. If you don't want to stepThrough the entry and exit orders placed at the spread of the order book3. The strategy allows you to set the accumulation mode i.e. whether you like to accumulate base or quote currency,   in the case of base accumulation only short orders are prioritised,   a sell order is placed, the strategy waits until the order is filled and only then places the buy-back order   in the case of quote accumulation only long orders are prioritised,   a buy order is placed, the strategy waits until the order is filled and only then places the sell-back order
+ </pre></div>
         
     
 </header>
@@ -93,7 +95,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="BollingerIndicator"><span class="type-signature"></span>new BollingerIndicator()</h4>
+    <h4 class="name" id="MarketMaker"><span class="type-signature"></span>new MarketMaker(args)</h4>
     
     
 </dt>
@@ -106,6 +108,56 @@
     
 
     
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#marketMakerConfig">marketMakerConfig</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Strategy configuration options</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -185,7 +237,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getData"><span class="type-signature">&lt;static> </span>getData(o, h, l, c, v, candles)</h4>
+    <h4 class="name" id="getExitBuyOrderMount"><span class="type-signature"></span>getExitBuyOrderMount(bidPrice)</h4>
     
     
 </dt>
@@ -224,13 +276,297 @@
 
         <tr>
             
-                <td class="name"><code>o</code></td>
+                <td class="name"><code>bidPrice</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the current identified bidPrice</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    calculates an amount for a buy order
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getExitSellOrderAmount"><span class="type-signature"></span>getExitSellOrderAmount(askPrice)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>askPrice</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the current identified askPrice</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    calculates an amount for a sell order
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="handleBaseAccumulationEntryFlow"><span class="type-signature">&lt;async> </span>handleBaseAccumulationEntryFlow(bidPrice, askPrice)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bidPrice</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">Number</span>
 
 
 
@@ -241,20 +577,20 @@
 
             
 
-            <td class="description last">The Opening Candles</td>
+            <td class="description last">the current identified ask price</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>h</code></td>
+                <td class="name"><code>askPrice</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">Number</span>
 
 
 
@@ -265,20 +601,144 @@
 
             
 
-            <td class="description last">The Higher High Candles</td>
+            <td class="description last">the current identified bid price</td>
         </tr>
 
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    executes a limit sell order and stores the sell order in the strategy scope,                        creates a callback function to execute a limit buy order soon as the sell order has ben filled
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="handleQuoteAccumulationEntryFlow"><span class="type-signature">&lt;async> </span>handleQuoteAccumulationEntryFlow(bidPrice, askPrice)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>l</code></td>
+                <td class="name"><code>bidPrice</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">Number</span>
 
 
 
@@ -289,20 +749,20 @@
 
             
 
-            <td class="description last">The Lower Low Candles</td>
+            <td class="description last">the current identified ask price</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>c</code></td>
+                <td class="name"><code>askPrice</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">Number</span>
 
 
 
@@ -313,38 +773,434 @@
 
             
 
-            <td class="description last">The Closing Candles</td>
+            <td class="description last">the current identified bid price</td>
         </tr>
 
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    executes a limit buy order and stores the buy order in the strategy scope,                        creates a callback function to execute a limit sell order soon as the buy order has ben filled
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="isBaseAccumulation"><span class="type-signature"></span>isBaseAccumulation()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    helper function to determine if the current accumulation mode is base currency
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="isQuoteAccumulation"><span class="type-signature"></span>isQuoteAccumulation()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    helper function to determine if the current accumulation mode is quote currency
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="noOrdersPlaced"><span class="type-signature"></span>noOrdersPlaced()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    helper function to identify if this strategy has orders cached
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="run"><span class="type-signature">&lt;async> </span>run(_index, isBackTest, ticker)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
     
 
         <tr>
             
-                <td class="name"><code>v</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;number></span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The Volume Data</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>args.period</code></td>
+                <td class="name"><code>_index</code></td>
             
 
             <td class="type">
@@ -360,21 +1216,27 @@
             
 
             
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
 
-            <td class="description last">the moving average period</td>
+            <td class="description last"></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>args.stdDev</code></td>
+                <td class="name"><code>isBackTest</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">boolean</span>
 
 
 
@@ -384,21 +1246,27 @@
             
 
             
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
 
-            <td class="description last">the standard deviation of bands</td>
+            <td class="description last"></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>candles</code></td>
+                <td class="name"><code>ticker</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;Array.&lt;number>></span>
+<span class="param-type"><a href="global.html#ticker">ticker</a></span>
 
 
 
@@ -408,8 +1276,14 @@
             
 
             
+                <td class="default">
+                
+                    null
+                
+                </td>
+            
 
-            <td class="description last">o,h,l,c,v array Buffer</td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -480,7 +1354,497 @@
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;<a href="global.html#bollinger">bollinger</a>></span>
+<span class="param-type">Promise.&lt;{custom: {}, context: null, state, timestamp: number}></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setExchange"><span class="type-signature"></span>setExchange(exchange)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>exchange</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ExchangeService.html">ExchangeService</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The client to allow us to make API requests to the exchange</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setUpClient"><span class="type-signature">&lt;async> </span>setUpClient()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    Sets up the Exchange client and loads the market structure
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="MarketMaker.html">MarketMaker</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setup"><span class="type-signature">&lt;async> </span>setup(klineCandles)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>klineCandles</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Array.&lt;Number>></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sets up the Strategy with Indicator Data and Historical Candle data</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".init"><span class="type-signature">&lt;static> </span>init(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#marketMakerConfig">marketMakerConfig</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Strategy configuration options</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="MarketMaker.html">MarketMaker</a></span>
 
 
 
@@ -543,7 +1907,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a>
 	
-		on 2023-04-17T19:29:30+01:00
+		on 2023-04-17T19:29:31+01:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
