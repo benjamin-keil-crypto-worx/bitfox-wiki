@@ -5,7 +5,7 @@ param(
 )
 
 Write-Host "using $bitfoxPath directories to generate documentation"
-jsdoc -c ./assets/config.json -t $bitfoxPath/node_modules/ink-docstrap/template  -d ./docs/pages/bitfox-documentation -R .\assets\BitFoxLanding.md
+jsdoc -c ./assets/config.json -t $bitfoxPath/node_modules/ink-docstrap/template  -d ./docs/pages/bitfox-documentation/docstrap -R .\assets\BitFoxLanding.md
 
 Write-Host "adding changes to git (git add .)"
 git add .

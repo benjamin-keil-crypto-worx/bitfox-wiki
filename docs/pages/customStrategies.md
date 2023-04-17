@@ -133,6 +133,9 @@ this.indicators.IndicatorUtils.className;
 this.indicators.EMAIndicator.className;
 this.indicators.IndicatorList.className;
 ```
+For Usage and Instantiation and return types of indicators, we recommend that you look at our [Documentation](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/index.html)
+The Documentation is searchable and should be easily navigable.
+
 
 ### A Strategy Template
 We know .... its exciting to get Started right away and start creating you Strategies, but before you start Hacking away please take a few minutes
@@ -299,3 +302,24 @@ class StrategyTemplate extends BaseStrategy {
 // Optional export of ths class
 module.exports = {StrategyTemplate:StrategyTemplate}
 ```
+
+## Strategies Shipped within BitFox
+
+We have created a few example Strategies that you can use to test and play around with,
+However please be advised that we **Do not recommend** that these strategies are executed in ``life``
+or ``private`` execution contexts as you are guaranteed to lose money since we created these strategies for demonstration purposes.
+
+A Good idea is start these strategies with the back test flag set to true to get a general idea about their performance and profitability.
+
+Please see below the list of current Strategies that you can use straight of the box with BitFox!
+* [Bollinger Squeeze](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/Bollinger.html)
+* [Ema Trend](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/EmaTrend.html)
+* [Marke tMaker](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/MarketMaker.html)
+* [MFI MACD](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/MfiMacd.html)
+* [RSI Trend](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/RSITrend.html)
+* [Smart Accumulate](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/SmartAccumulate.html)
+* [Thors Hammer](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/ThorsHammer.html)
+* [Super Trend](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/SuperTrend.html)
+
+
+

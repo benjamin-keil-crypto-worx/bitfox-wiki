@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Class: MorningStar</title>
+	<title>Documentation Class: RSITrend</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -72,16 +72,16 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: MorningStar</h1>
+	<h1 class="page-title">Class: RSITrend</h1>
 <section>
 
 <header>
     
         <h2>
-            <span class="ancestors"><a href="PatternRecognitionIndicator.html">PatternRecognitionIndicator</a>.</span>
-        
-        MorningStar
+        RSITrend
         </h2>
+        
+            <div class="class-description">Class RSITrendThis class is a super simple RSI Strategy implementationIt enters long trade positions when the trend is up and the RSI is below given threshold default is 30It enters short trade positions when the trend is down and the RSI above given threshold default is 80The trend direction is determined by checking 2 exponential moving average a fast and a slow moving.</div>
         
     
 </header>
@@ -93,7 +93,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="MorningStar"><span class="type-signature"></span>new MorningStar(o, h, l, c)</h4>
+    <h4 class="name" id="RSITrend"><span class="type-signature"></span>new RSITrend(args)</h4>
     
     
 </dt>
@@ -132,13 +132,13 @@
 
         <tr>
             
-                <td class="name"><code>o</code></td>
+                <td class="name"><code>args</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type"><a href="global.html#rsiTrendConfig">rsiTrendConfig</a></span>
 
 
 
@@ -149,20 +149,366 @@
 
             
 
-            <td class="description last">The Opening Candles</td>
+            <td class="description last">The Strategies Parameters</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="getIndicator"><span class="type-signature"></span>getIndicator()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    returns an Indicator Data Array
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;any></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getState"><span class="type-signature"></span>getState()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    The Current State of the Strategy execution
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="run"><span class="type-signature">&lt;async> </span>run(_index, isBackTest, ticker)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>_index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last"></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>h</code></td>
+                <td class="name"><code>isBackTest</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type">boolean</span>
 
 
 
@@ -172,21 +518,27 @@
             
 
             
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
 
-            <td class="description last">The Higher High Candles</td>
+            <td class="description last"></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>l</code></td>
+                <td class="name"><code>ticker</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array.&lt;number></span>
+<span class="param-type"><a href="global.html#ticker">ticker</a></span>
 
 
 
@@ -196,32 +548,14 @@
             
 
             
-
-            <td class="description last">The Lower Low Candles</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>c</code></td>
-            
-
-            <td class="type">
-            
+                <td class="default">
                 
-<span class="param-type">Array.&lt;number></span>
-
-
-
-            
-            </td>
-
+                    null
+                
+                </td>
             
 
-            
-
-            <td class="description last">The Closing Candles</td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -284,10 +618,6 @@
     <h5>Returns:</h5>
     
             
-<div class="param-desc">
-    returns true if a pattern is detected
-</div>
-
 
 
 <dl>
@@ -296,7 +626,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Boolean</span>
+<span class="param-type">Promise.&lt;{custom: {}, context: null, state, timestamp: number}></span>
 
 
 
@@ -309,8 +639,114 @@
     
 </dd>
 
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setState"><span class="type-signature"></span>setState(state)</h4>
     
-    </div>
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Current State of the Strategy execution</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
 
     
 
@@ -324,6 +760,278 @@
 
     
 
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setup"><span class="type-signature">&lt;async> </span>setup(klineCandles)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>klineCandles</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Array.&lt;Number>></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Sets up the Strategy with Indicator Data and Historical Candle data</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".init"><span class="type-signature">&lt;static> </span>init(args)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>args</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#rsiTrendConfig">rsiTrendConfig</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Strategies Parameters</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="RSITrend.html">RSITrend</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
     
 
     
@@ -373,7 +1081,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a>
 	
-		on 2023-04-17T19:29:31+01:00
+		on 2023-04-17T19:50:23+01:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>
