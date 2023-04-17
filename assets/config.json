@@ -1,0 +1,20 @@
+{
+  "source": {
+    "include": [ "D:/private/cryptoworx/bitfox/strategies/SuperTrend.js","D:/private/cryptoworx/bitfox/strategies/Strategy.js",
+      "D:/private/cryptoworx/bitfox/alerting/Alert.js", "D:/private/cryptoworx/bitfox/alerting/Email.js",   "D:/private/cryptoworx/bitfox/alerting/SimplePriceAlert.js",
+      "D:/private/cryptoworx/bitfox/alerting/Slack.js", "D:/private/cryptoworx/bitfox/alerting/Telegram.js","D:/private/cryptoworx/bitfox/alerting/TelegramSession.js",
+      "D:/private/cryptoworx/bitfox/engine/BackTest.js","D:/private/cryptoworx/bitfox/engine/BitFox.js",    "D:/private/cryptoworx/bitfox/engine/DataLoader.js", "D:/private/cryptoworx/bitfox/lib/events/EventHandler.js",
+      "D:/private/cryptoworx/bitfox/lib/utility/Log.js","D:/private/cryptoworx/bitfox/lib/utility/util.js",
+      "D:/private/cryptoworx/bitfox/lib/model/Candlesticks.js",
+      "D:/private/cryptoworx/bitfox/lib/model/Edge.js",
+      "D:/private/cryptoworx/bitfox/lib/model/IndicatorConvergence.js",
+      "D:/private/cryptoworx/bitfox/lib/model/Mock.js",
+      "D:/private/cryptoworx/bitfox/lib/model/Model.js",
+      "D:/private/cryptoworx/bitfox/lib/model/Point.js",
+      "D:/private/cryptoworx/bitfox/lib/states/States.js",
+      "D:/private/cryptoworx/bitfox/lib/indicators/Indicators.js",
+      "D:/private/cryptoworx/bitfox/service/ExchangeService.js","D:/private/cryptoworx/bitfox/service/MockService.js"
+    ],
+    "exclude": [ "node_modules/" ]
+  }
+}
