@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Documentation Class: PatternRecognitionIndicator</title>
+	<title>Documentation Class: ProcessManager</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -72,16 +72,16 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: PatternRecognitionIndicator</h1>
+	<h1 class="page-title">Class: ProcessManager</h1>
 <section>
 
 <header>
     
         <h2>
-        PatternRecognitionIndicator
+        ProcessManager
         </h2>
         
-            <div class="class-description">Class PatternRecognitionIndicator</div>
+            <div class="class-description">Class Process Manager<pre>This Class is responsible to schedule Bitfox Engine Runtime context'sThe BitFox Engine when executed without a Process Manager executes Strategie, Alerts based on a interval mechanism relyingon Javascript's setInterval() function where the interval is provided via the options provided to the engine, for long periods like hourly or daily, weekly or even monthly processes this is not a good way of scheduling the trading bots so we included a Process Manager that functionslike a cron job for your Engine runtime strategies.The Process Manager has a predefined set of Schedules outlined below: "1m"  Runs the Engine Context once every  minute "3m"  Runs the Engine Context once every  3 minute's "5m"  Runs the Engine Context once every  5 minute's "15m" Runs the Engine Context once every  15 minute's "30m" Runs the Engine Context once every  30 minute's "1h"  Runs the Engine Context once every  hour "2h"  Runs the Engine Context once every  2 hour's "4h"  Runs the Engine Context once every  4 hour's "12h  Runs the Engine Context once every  12 hour's "1d"  Runs the Engine Context once every  Day "1W"  Runs the Engine Context once every  Week "1M"  Runs the Engine Context once every  MOnths</pre></div>
         
     
 </header>
@@ -93,7 +93,7 @@
         
 <hr>
 <dt>
-    <h4 class="name" id="PatternRecognitionIndicator"><span class="type-signature"></span>new PatternRecognitionIndicator()</h4>
+    <h4 class="name" id="ProcessManager"><span class="type-signature"></span>new ProcessManager()</h4>
     
     
 </dt>
@@ -171,115 +171,6 @@
     
 
     
-        <h3 class="subsection-title">Classes</h3>
-
-        <dl>
-            <dt><a href="PatternRecognitionIndicator.AbandonedBaby.html">AbandonedBaby</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BearishEngulfingPattern.html">BearishEngulfingPattern</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BearishHammer.html">BearishHammer</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BearishHarami.html">BearishHarami</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BearishHaramiCross.html">BearishHaramiCross</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BearishInvertedHammer.html">BearishInvertedHammer</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BearishMarubozu.html">BearishMarubozu</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BearishSpinningTop.html">BearishSpinningTop</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BullishEngulfingPattern.html">BullishEngulfingPattern</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BullishHammer.html">BullishHammer</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BullishHarami.html">BullishHarami</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BullishHaramiCross.html">BullishHaramiCross</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BullishInvertedHammer.html">BullishInvertedHammer</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BullishMarubozu.html">BullishMarubozu</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.BullishSpinningTop.html">BullishSpinningTop</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.DarkCloudCover.html">DarkCloudCover</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.Doji.html">Doji</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.DownsideTasukiGap.html">DownsideTasukiGap</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.DragonFlyDoji.html">DragonFlyDoji</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.EveningDojiStar.html">EveningDojiStar</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.EveningStar.html">EveningStar</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.GraveStoneDoji.html">GraveStoneDoji</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.HammerPattern.html">HammerPattern</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.HammerPatternUnconfirmed.html">HammerPatternUnconfirmed</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.HangingMan.html">HangingMan</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.HangingManUnconfirmed.html">HangingManUnconfirmed</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.MorningDojiStar.html">MorningDojiStar</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.MorningStar.html">MorningStar</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.PiercingLine.html">PiercingLine</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.ShootingStar.html">ShootingStar</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.ShootingStarUnconfirmed.html">ShootingStarUnconfirmed</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.ThreeBlackCrows.html">ThreeBlackCrows</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.ThreeWhiteSoldiers.html">ThreeWhiteSoldiers</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.TweezerBottom.html">TweezerBottom</a></dt>
-            <dd></dd>
-        
-            <dt><a href="PatternRecognitionIndicator.TweezerTop.html">TweezerTop</a></dt>
-            <dd></dd>
-        </dl>
-    
 
     
 
@@ -294,7 +185,357 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".getPatterns"><span class="type-signature">&lt;static> </span>getPatterns()</h4>
+    <h4 class="name" id="scheduleProcess"><span class="type-signature"></span>scheduleProcess()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Schedules the Process and executes the run() context in the BitFox engine instance
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setProcessSchedule"><span class="type-signature"></span>setProcessSchedule(timeFrame)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>timeFrame</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Time Frame represented as a String  Default 5m</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    - The Process Manager Instance
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="ProcessManager.html">ProcessManager</a></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="setProcessTask"><span class="type-signature"></span>setProcessTask(task)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>task</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BitFox.html">BitFox</a></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The BitFox Engine</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".getProcessManager"><span class="type-signature">&lt;static> </span>getProcessManager()</h4>
     
     
 </dt>
@@ -364,7 +605,7 @@
     
             
 <div class="param-desc">
-    A list of available Patterns
+    - The Process Manager Instance
 </div>
 
 
@@ -375,7 +616,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;string></span>
+<span class="param-type"><a href="ProcessManager.html">ProcessManager</a></span>
 
 
 
