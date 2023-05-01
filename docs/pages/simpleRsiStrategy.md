@@ -83,7 +83,7 @@ Now we make changes in your Strategy to make it usable for the bitfox engine.
 * Initialize a static field in your class, this is used later to initialize the indicator data
 
 ``
-static RSI = Strategy.INDICATORS.RsiIndicator.className;
+static RSI = BaseStrategy.INDICATORS.RsiIndicator.className;
 ``
 
 * Create a static method in your class **always**  provide this method with its signature ``init(args)``
@@ -120,7 +120,7 @@ let BaseStrategy = bitfox.Strategy;
 
 class MyAwesomeStrategy extends BaseStrategy {
      // Retrieve your desired Indicator
-    static RSI = Strategy.INDICATORS.RsiIndicator.className;
+    static RSI = BaseStrategy.INDICATORS.RsiIndicator.className;
 
     // A unified instantiation method it is called from the engine context, you must implement this 
     static init(args) {
@@ -168,7 +168,7 @@ let BaseStrategy = bitfox.Strategy;
 
 class MyAwesomeStrategy extends BaseStrategy {
      // Retrieve your desired Indicator
-    static RSI = Strategy.INDICATORS.RsiIndicator.className;
+    static RSI = BaseStrategy.INDICATORS.RsiIndicator.className;
 
     // A unified instantiation method it is called from the engine context, you must implement this 
     static init(args) {
@@ -244,7 +244,7 @@ let BaseStrategy = bitfox.Strategy;
 
 class MyAwesomeStrategy extends BaseStrategy {
      // Retrieve your desired Indicator
-    static RSI = Strategy.INDICATORS.RsiIndicator.className;
+    static RSI = BaseStrategy.INDICATORS.RsiIndicator.className;
 
     // A unified instantiation method it is called from the engine context, you must implement this 
     static init(args) {
@@ -437,7 +437,7 @@ let BaseStrategy = bitfox.Strategy;
 
 class MyAwesomeStrategy extends BaseStrategy {
      // Retrieve your desired Indicator
-    static RSI = Strategy.INDICATORS.RsiIndicator.className;
+    static RSI = BaseStrategy.INDICATORS.RsiIndicator.className;
 
     // A unified instantiation method it is called from the engine context, you must implement this 
     static init(args) {
@@ -521,10 +521,11 @@ and copy and Paste below code
 
 ```js
 
-let {builder} = require("bitfox")
+let bitfox = require("bitfox").bitfox;
+let {builder} = bitfox
 let {MyAwesomeStrategy} = require("./MyAwesomeStrategy")
 
-// instantiate a bitfoxengine instance we are using the builder to create a new bitfox engine
+// instantiate a bitfox engine instance we are using the builder to create a new bitfox engine
 let engine = builder()
        .requiredCandles(200)
        .sidePreference("short")
@@ -552,7 +553,7 @@ let engine = builder()
     await engine.setupAndLoadClient()
     engine.applyStrategy(MyAwesomeStrategy);    	
     await engine.run();
-})
+})();
 ```
 #### Run Your Strategy with an event Emitter
 
@@ -639,7 +640,7 @@ let engine = builder()
         console.log(eventArgs)
     });
         await engine.run();
-    })
+    })();
 ```
 
 Thats it It, We understand that it may be a little overwhelming at the start, but its actually really simple and easy to create and run Strategies when you get the hang of it. 
