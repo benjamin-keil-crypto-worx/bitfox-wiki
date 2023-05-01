@@ -544,16 +544,13 @@ let engine = builder()
        .life(false)
        .interval(10)
        .build();
-}
-
-// always make sure to call this method this will setup the Exchange Client and other engine dependencies and components
-await engine.setupAndLoadClient()
-engine.applyStrategy(MyAwesomeStrategy);
-
 
 /** Now Run Your Strategy remember the bitfox engine runs asynchronously so always wrap the run method inside a async function  **/
 
 (async ()=>{
+    // always make sure to call this method this will setup the Exchange Client and other engine dependencies and components
+    await engine.setupAndLoadClient()
+    engine.applyStrategy(MyAwesomeStrategy);    	
     await engine.run();
 })
 ```
@@ -606,44 +603,43 @@ let engine = builder()
        .interval(10)
        .build();
 
-// Initialize all dependent components 
-// always make sure to call this method this will setup the Exchange Client and other engine dependencies and components
-await engine.setupAndLoadClient()
-engine.applyStrategy(MyAwesomeStrategy);
-
-
-// set the bitfox dedicated event handler
-engine.getStrategy().setEventHandler(engine.getEventEmitter());
-
-// now just create some listeners for event
-engine.on("MyAwesomeStrategy.RSI.message",(eventArgs) => {
-    console.log(eventArgs)
-});
-
-// Don't forget to register for default events as well
-engine.on('onMessage', (eventArgs) => {
-    console.log(eventArgs);
-    // Do Something 
-});
-engine.on('onError', (eventArgs) => {
-    console.log(eventArgs)
-});
-engine.on('onOrderPlaced', (eventArgs) => {
-    console.log(eventArgs)
-});
-engine.on('onOrderFilled', (eventArgs) => {
-    console.log(eventArgs)
-});
-engine.on('onTradeComplete', (eventArgs) => {
-    console.log(eventArgs)
-});
-engine.on('onStopLossTriggered', (eventArgs) => {
-    console.log(eventArgs)
-});
-
 (async ()=>{
-    await engine.run();
-})
+    // Initialize all dependent components 
+    // always make sure to call this method this will setup the Exchange Client and other engine dependencies and components
+    await engine.setupAndLoadClient()
+    engine.applyStrategy(MyAwesomeStrategy);
+
+
+    // set the bitfox dedicated event handler
+    engine.getStrategy().setEventHandler(engine.getEventEmitter());
+
+    // now just create some listeners for event
+    engine.on("MyAwesomeStrategy.RSI.message",(eventArgs) => {
+        console.log(eventArgs)
+    });
+
+    // Don't forget to register for default events as well
+    engine.on('onMessage', (eventArgs) => {
+        console.log(eventArgs);
+        // Do Something 
+    });
+    engine.on('onError', (eventArgs) => {
+        console.log(eventArgs)
+    });
+    engine.on('onOrderPlaced', (eventArgs) => {
+        console.log(eventArgs)
+    });
+    engine.on('onOrderFilled', (eventArgs) => {
+        console.log(eventArgs)
+    });
+    engine.on('onTradeComplete', (eventArgs) => {
+        console.log(eventArgs)
+    });
+    engine.on('onStopLossTriggered', (eventArgs) => {
+        console.log(eventArgs)
+    });
+        await engine.run();
+    })
 ```
 
 Thats it It, We understand that it may be a little overwhelming at the start, but its actually really simple and easy to create and run Strategies when you get the hang of it. 
