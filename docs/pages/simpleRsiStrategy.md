@@ -605,7 +605,6 @@ let engine = builder()
        .life(false)
        .interval(10)
        .build();
-}
 
 // Initialize all dependent components 
 // always make sure to call this method this will setup the Exchange Client and other engine dependencies and components
