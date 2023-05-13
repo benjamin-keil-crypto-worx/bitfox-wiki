@@ -320,7 +320,7 @@ Please see below the list of current Strategies that you can use straight of the
 * [Smart Accumulate](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/SmartAccumulate.html)
 * [Thors Hammer](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/ThorsHammer.html)
 * [Super Trend](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/SuperTrend.html)
-* [Super Trend](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/ZemaCrossOver.html)
+* [Zero  Lag Moving Average Cross Over](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/ZemaCrossOver.html)
 
 
 
