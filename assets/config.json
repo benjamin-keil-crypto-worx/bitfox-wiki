@@ -31,7 +31,12 @@
       "C:/Users/benja/develop/bitfox/lib/states/States.js",
       "C:/Users/benja/develop/bitfox/lib/indicators/Indicators.js",
       "C:/Users/benja/develop/bitfox/service/ExchangeService.js",
-      "C:/Users/benja/develop/bitfox/service/MockService.js"
+      "C:/Users/benja/develop/bitfox/service/MockService.js",
+      "C:/Users/benja/develop/bitfox/service/ExchangeService.js",
+      "C:/Users/benja/develop/bitfox/server/client.js",
+      "C:/Users/benja/develop/bitfox/server/server.js",
+      "C:/Users/benja/develop/bitfox/server/server-response.js"
+
     ],
     "exclude": [ "node_modules/" ]
   }
