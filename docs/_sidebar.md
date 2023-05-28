@@ -7,5 +7,5 @@
 * [Alerting & Notifications](pages/alertsAndNotifications.md)
 * [Data Analysis](pages/dataAnalysisPlugin.md)
 * [Misc](pages/misc.md)
-* [Documentation](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/index.html)
 * [BitfoxServer](pages/bitfoxServer.md)
+* [Documentation](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-documentation/docstrap/index.html)
