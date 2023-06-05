@@ -55,7 +55,7 @@ POST   /shutdown    "Emergency Shut Down"
 
 A insomna colleaction can be downloaded [Here!](https://raw.githubusercontent.com/benjamin-keil-crypto-worx/bitfox-wiki/master/docs/pages/bitfox-api/Insomnia)
 
-See the full [API Documentation](https://benjamin-keil-crypto-worx.github.io/bitfox-wiki/pages/bitfox-api/api/index.html)  for more information and usage 
+See the full [API Documentation](https://benjamin-keil-crypto-worx.github.io/bitfox/)  for more information and usage 
 
 ## The REST API Client 
 
