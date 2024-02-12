@@ -1,10 +1,11 @@
 ## Alert & Notification Setup
 
-Currently, there are 3 Different types of Notification mechanisms that you can receive Alerts from your Alerting and Notification Solutions.
+Currently, there are 4 Different types of Notification mechanisms that you can receive Alerts from your Alerting and Notification Solutions.
 
 1. Email
 2. Slack
 3. Telegram
+4. Ntfy
 
 Each of which have slightly different Setup and Configuration requirements that you need to follow very carefully in order to receive Alerts!
 
@@ -46,3 +47,11 @@ Follow the Instructions and once you have created a bot all you need to do, is s
 and open your newly created Bot on Telegram and enter ``/start`` In the chat box.
 
 This will Create an internal Chat ID on the Bot side and the bot will start sending Notifications to your Chat!
+
+### Ntfy
+
+ntfy lets you send push notifications to your phone or desktop via scripts from any computer, using simple HTTP PUT or POST requests.
+
+Visit this link: https://docs.ntfy.sh to follow the  Setup Instructions on the given link. 
+
+

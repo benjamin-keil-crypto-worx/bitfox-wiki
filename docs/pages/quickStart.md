@@ -13,7 +13,8 @@ the comprehensive feature list of  BitFox.
 In order to make life a little easier we have included debugging 
 utilities that users of BitFox can leverage to start getting familiar with the library and ramp up quickly.
 
-We **Highly** recommend that you read and got through the below Tutorial step by step.
+We **Highly** recommend that you read and got through the below Tutorial step by step, or if you have adhd there is a example directory with alot of examples and
+code that you can refer to, we are working on on providing a extensive list of examples and code.  
 
 **Import Bitfox into your Project**
 
@@ -34,8 +35,8 @@ const engine = builder().requiredCandles(200)
     .symbol("BTCUSDT")
     .timeframe("4h")
     .amount(100)
-    .profitPct(0.03)
-    .stopLossPct(0.02)
+    .profitPct(1.03)
+    .stopLossPct(0.98)
     .fee(0.002)
     .key("FAKE_KEY")
     .secret("FAKE_SECRET")
@@ -140,7 +141,8 @@ let options = {
         .symbol("ADAUSDT")
         .timeframe("15m")
         .amount(100)
-        .profitPct(0.003)
+        .profitPct(1.03)
+        .stopLossPct(0.98)
         .fee(0.02)
         .key("FAKE_KEY")
         .secret("FAKE_SECRET")
@@ -280,15 +282,15 @@ let engine = builder()
     .amount(Number)
 
     // Exchange & Engine Specific Parameter sets your desired Profit Target to exit long/short positions
-    // this is a percentage i.e. 0.01 would indicate 1% higher or lower of the current price 
+    // this is a percentage i.e. 1.01 would indicate 1% higher than the current price 
     .profitPct(Number)
     
     // Exchange & Engine Specific Parameter sets your desired Stop Loss Target to exit long/short positions
-    // this is a percentage i.e. 0.01 would indicate 1% higher or lower of the current price
+    // this is a percentage i.e. 0.99 would indicate 1%  lower from the current price
     .stopLossPct(Number)
     
     // Exchange & Engine Specific Parameter setting the exchange fee used to calculate better long/short profit and stop targets
-    // this is a percentage i.e. 0.01 would indicate 1% higher or lower of the current price
+    // this is a percentage i.e. 1.01 would indicate 1% of the trading cost incurred by the executed trade
     .fee(Number)
     
     // Exchange Specific Parameter : {'defaultType': 'spot', 'adjustForTimeDifference': true,'recvwindow':7000 }; 
@@ -330,7 +332,7 @@ let engine = builder()
     /*                      Alert & Notificaion  Parameters                             */
     /*----------------------------------------------------------------------------------*/
 
-    // Alerting & Notification Specific Parameter setting the Alert Type to be used: Email|Slack|Telegram
+    // Alerting & Notification Specific Parameter setting the Alert Type to be used: Email|Slack|Telegram|Ntfy
     // might be important or needed in the Strategy 
     .type(String)
 
@@ -349,6 +351,13 @@ let engine = builder()
     // Alerting & Notification Email Specific Parameter to identify where the email should be send to!
     .emailTo(String)
     
+    // Alerting & Notification Ntfy address to publish the Notification to
+    .ntfyAddress(String)
+
+    // Alerting & Notification Ntfy topic to publish the Notification to
+    .ntfyTopic(String)
+
+
     // Alerting & Notification Specific Parameter setting custom data for Alerts
     .alertExtras(Object)
 
@@ -444,7 +453,9 @@ _(We recommend using the provided builder interface to initialize an engine belo
   /*----------------------------------------------------------------------------------*/
   /*                      Alert & Notification  Parameters                             */
   /*----------------------------------------------------------------------------------*/
-
+  
+  // Notify Only do not execute trades
+  "notifyOnly":true || false
   // The Type of Notification to use we currently support Email|Slack|Telegram  
   "type": "Telegram",
   
@@ -453,6 +464,8 @@ _(We recommend using the provided builder interface to initialize an engine belo
   "telegramChatId": "chatID",
   "emailFrom": "yourSender@someMail.com",
   "emailTo": "yourReceiver@someMail.com",
+  "ntfyAddress":"https://your-ntfy-Serveraddress",
+  "ntfyTopic":"your-topic-name",
 
   // additional custom parameters for an Alert context 
   "alertExtras": {},
@@ -473,6 +486,7 @@ _(We recommend using the provided builder interface to initialize an engine belo
   // Wether to execute real trades or Mock a Strategy Execution flow
   "life": false,
   // The Polling interval in seconds for the engine to retrieve candle Data, and verify your Strategy logic 
-  "interval": 10
+  "interval": 10,
+  "setAsProcess": "ProcessManager(instance)"
 }
 ```
